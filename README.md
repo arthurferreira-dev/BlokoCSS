@@ -1,2 +1,31 @@
-# BlokoCSS
-lib de componentes css feito por mim, para testar meus conhecimentos em css
+# &#x1F4E6; BlokoCSS
+
+O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutilizável, desenvolvida para acelerar o desenvolvimento de interfaces web com uma base visual limpa e consistente. Ideal para projetos que precisam de estrutura e estilo sem a complexidade de frameworks grandes como Bootstrap ou Tailwind.
+
+## &#x2728; Características
+
+* &#x2705; Componentes prontos para uso
+
+* &#x1F9E9; Estilo modular e personalizável
+
+* &#x1F680; Sem dependências externas
+
+* &#x1F9FC; Sintaxe clara e fácil de manter
+
+* &#x1F310; Ideal para projetos HTML/CSS puros
+
+## &#x1F4E5; Instalação
+
+Você pode baixar/utilizar dessas formas
+
+1. Via CDN
+```html
+```
+
+1. .ZIP
+
+<a href="">
+<img src="">
+</a>
+
+> Este projeto está sobe a Licensa **GNU AFFERO GENERAL**, confira em [LICENSE](LICENSE)
