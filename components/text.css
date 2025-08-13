@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root {
+    --nowraps: nowrap;
+}
+
+/* Alinhamentos de Textos */
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Estilos de Letras */
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+.text-capi {
+    text-transform: capitalize;
+}
+
+/* Transbordamento de Texto */
+
+.text-truncate {
+    overflow: hidden;
+    white-space: var(--nowraps);
+    text-overflow: ellipsis;
+}
+
+.text-wrap {
+    text-wrap: wrap;
+}
+
+.text-nowrap {
+    text-wrap: var(--nowraps);
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('components/fonts.css'); /* Fontes do BlokoCSS */
+@import url('components/text.css'); /* Textos do BlokoCSS */
+
+:root {
+    --zr-pd: 0px;
+    --zr-m: 0px;
+}
+
+* {
+    margin: var(--zr-m);
+    padding: var(--zr-pd);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--sans);
+    line-height: var(--lines);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: var(--lines);
+}

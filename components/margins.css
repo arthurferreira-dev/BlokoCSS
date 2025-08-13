@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root {
+    --spacing: 0.25rem;
+}
+
+.mar-0 {
+    margin: var(--spacing - --spacing);
+}
+
+.mar-1 {
+    margin: var(--spacing * 1);
+}
+
+.mar-2 {
+    margin: var(--spacing * 2);
+}
+
+.mar-3 {
+    margin: var(--spacing * 3);   
+}
+
+.mar-4 {
+    margin: var(--spacing * 4);
+}
+
+.mar-5 {
+    margin: var(--spacing * 5);
+}
+
+.mar-6 {
+    margin: var(--spacing * 6);
+}
+
+.mar-7 {
+    margin: var(--spacing * 7);
+}
+
+.mar-8 {
+    margin: var(--spacing * 8);
+}
+
+.mar-9 {
+    margin: var(--spacing * 9);
+}
+
+.mar-10 {
+    margin: var(--spacing * 10);
+}
