@@ -16,13 +16,14 @@ O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutiliz�
 
 ## &#x1F4E5; Instalação
 
-Você pode baixar/utilizar dessas formas
+Você pode utilizar dessas seguintes formas:
 
 1. Via CDN
 ```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS@main/bloko.css" />
 ```
 
-1. .ZIP
+2. .ZIP
 
 <a href="">
 <img src="">
