@@ -20,7 +20,7 @@ Você pode utilizar dessas seguintes formas:
 
 1. Via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS@main/bloko.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/bloko.css" />
 ```
 
 2. .ZIP
