@@ -2,6 +2,7 @@
 
 :root {
     --spacing: 0.25rem;
+    --automatic: auto;
     --m-0: calc(var(--spacing) * 0);
     --m-1: calc(var(--spacing) * 1);
     --m-2: calc(var(--spacing ) * 2);
@@ -243,4 +244,22 @@
 
 .mb-10 {
     margin-bottom: var(--m-10);
+}
+
+/* Margins-Auto */
+
+.m-auto {
+    margin: var(--automatic);    
+}
+
+.mt-auto {
+    margin-top: var(--automatic);
+}
+
+.mb-auto {
+    margin-bottom: var(--automatic);
+}
+
+.mr-auto {
+    margin-right: var(--automatic);    
 }
