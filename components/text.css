@@ -2,6 +2,8 @@
 
 :root {
     --nowraps: nowrap;
+    --black: #000;
+    --white: #fff;
 }
 
 /* Alinhamentos de Textos */
@@ -32,7 +34,7 @@
     text-transform: lowercase;
 }
 
-.text-capi {
+.text-capi, .text-capita {
     text-transform: capitalize;
 }
 
@@ -50,4 +52,14 @@
 
 .text-nowrap {
     text-wrap: var(--nowraps);
+}
+
+/* Text-Colors inspirados no Tailwind CSS v4.1 */
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
 }

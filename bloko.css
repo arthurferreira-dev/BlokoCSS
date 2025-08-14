@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('components/fonts.css'); /* Fontes do BlokoCSS */
 @import url('components/text.css'); /* Textos do BlokoCSS */
+@import url('components/margins.css'); /* Margins do BlokoCSS */
+@import url('components/paddings.css'); /* Paddings do BlokoCSS */
 
 :root {
     --zr-pd: 0px;
@@ -15,6 +17,7 @@
 
 body {
     font-family: var(--sans);
+    color: var(--text-black);
     line-height: var(--lines);
 }
 
