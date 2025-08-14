@@ -23,7 +23,7 @@ Você pode utilizar dessas seguintes formas:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/bloko.css" />
 ```
 
-2. .ZIP
+2. Baixando o Arquivo (*.ZIP*)
 
 <a href="">
 <img src="">

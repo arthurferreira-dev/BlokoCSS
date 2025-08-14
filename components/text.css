@@ -1,9 +1,8 @@
 @charset "UTF-8";
+@import url('CommonColors.css');
 
 :root {
     --nowraps: nowrap;
-    --black: #000;
-    --white: #fff;
 }
 
 /* Alinhamentos de Textos */
@@ -62,4 +61,132 @@
 
 .text-black {
     color: var(--black);
+}
+
+.text-silver {
+    color: var(--silver);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.text-grayDim {
+    color: var(--dim-gray);
+}
+
+.text-stone {
+    color: var(--stone);
+}
+
+.text-neutral {
+    color: var(--neutral);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-marron {
+    color: var(--marron);
+}
+
+.text-wine, .text-vinho {
+    color: var(--wine);
+}
+
+.text-wineDark, .text-vinhoDark {
+    color: var(--wine-dark);
+}
+
+.text-brown {
+    color: var(--brown);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-olive {
+    color: var(--olive);
+}
+
+.text-orangeYellow {
+    color: var(--orange-yellow);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-tomato {
+    color: var(--tomato);
+}
+
+.text-lime {
+    color: var(--lime-green);
+}
+
+.text-greenDark {
+    color: var(--dark-green);
+}
+
+.texxt-aqua {
+    color: var(--aqua);
+}
+
+.text-teal {
+    color: var(--teal);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-blueLight {
+    color: var(--blue-light);
+}
+
+.text-navy {
+    color: var(--navy-blue);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-hotPink {
+    color: var(--hot-pink);
+}
+
+.text-pinkFocus {
+    color: var(--pink-focus);
+}
+
+.text-pinkDark {
+    color: var(--pink-dark);
+}
+
+.text-purplePink {
+    color: var(--purple-pink);
+}
+
+.text-purpleDark {
+    color: var(--purple-dark);    
+}
+
+.text-purpleLight {
+    color: var(--purple-light);
+}
+
+.text-uzi {
+    color: var(--purple-uzi);
+}
+
+.text-indigo {
+    color: var(--indigo);
 }
