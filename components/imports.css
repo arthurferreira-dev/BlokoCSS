@@ -5,5 +5,5 @@
 @import url('layout/containers.css'); /* Containers do BlokoCSS */
 @import url('buttons.css'); /* Botões do BlokoCSS */
 @import url('typography/fonts.css'); /* Fontes do BlokoCSS */
-@import url('components/typography/text.css'); /* Textos do BlokoCSS */
-@import url('components/typography/CommonColors.css'); /* CommonColors do BlokoCSS */
+@import url('typography/text.css'); /* Textos do BlokoCSS */
+@import url('typography/CommonColors.css'); /* CommonColors do BlokoCSS */
