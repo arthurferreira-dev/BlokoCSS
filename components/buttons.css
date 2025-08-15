@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('typography/CommonColors.css');
+@import url('typography/text.css');
+@import url('spacing/paddings.css');
+@import url('borders/radius.css');
+
+button.btn-primary {
+    background-color: var(--white);
+    color: var(--black);
+    padding: var(--pd-2-5);
+    border-radius: var(--lg);
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: var(--silver);
+}
