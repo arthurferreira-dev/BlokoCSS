@@ -12,7 +12,6 @@
     --open-sans: 'Open Sans', sans-serif, ui-sans-serif;
     --google-sans-code: 'Google Sans Code', monospace, 'Courier New', sans-serif, ui-sans-serif;
     --lora: 'Lora', 'Times New Roman', ui-serif, serif;
-    --lines: 1.74rem;
 }
 
 /* Fontes Inspiradas do Tailwind CSS - Default */
@@ -36,22 +35,18 @@
 
 .font-roboto { /* Sans */
     font-family: var(--roboto);
-    line-height: calc(var(--lines) + 0.7);
 }
 
 .font-open { /* Sans */
     font-family: var(--open-sans);
-    line-height: calc(var(--lines) + 1);
 }
 
 .font-google { /* Sans */
     font-family: var(--google-sans-code);
-    line-height: calc(var(--lines) + 1.15);
 }
 
 .font-lora { /* Serif */
     font-family: var(--lora);
-    line-height: calc(var(--lines) + 1.1);
 }
 
 /* Font-Style e Weight inspirados no Boostrap 4 */

@@ -3,6 +3,21 @@
 
 :root {
     --nowraps: nowrap;
+    --extra-small: 1rem;
+    --small: 1.25rem;
+    --base: 1.5rem;
+    --lg-xl: 1.75rem;
+    --2xl: 2rem;
+    --3xl: 2.25rem;
+    --4xl: 2.50rem;
+    --tm-xs: 0.75rem;
+    --tm-sm: 0.875rem;
+    --tm-bs: 1rem;
+    --tm-lg: 1.125rem;
+    --tm-xl: 1.25rem;
+    --tm-2xl: 1.5rem;
+    --tm-3xl: 1.875rem;
+    --tm-4xl: 2.25rem;
 }
 
 /* Alinhamentos de Textos */
@@ -189,4 +204,48 @@
 
 .text-indigo {
     color: var(--indigo);
+}
+
+/* Font-size */
+
+.text-xsm {
+    font-size: var(--tm-xs);
+    line-height: var(--extra-small);   
+}
+
+.text-sm {
+    font-size: var(--tm-sm);
+    line-height: var(--small);
+}
+
+.text-bs {
+    font-size: var(--tm-bs);
+    line-height: var(--base);
+}
+
+.text-lg {
+    font-size: var(--tm-lg);
+}
+
+.text-xl {
+    font-size: var(--tm-xl);
+}
+
+.text-lg, .text-xl {
+    line-height: var(--lg-xl);
+}
+
+.text-2xl {
+    font-size: var(--tm-2xl);
+    line-height: var(--2xl);
+}
+
+.text-3xl {
+    font-size: var(--tm-3xl);
+    line-height: var(--3xl);
+}
+
+.text-4xl {
+    font-size: var(--tm-4xl);
+    line-height: var(--4xl);
 }

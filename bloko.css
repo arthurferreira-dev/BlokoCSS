@@ -34,10 +34,6 @@ html, body {
     height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    line-height: var(--lines);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: var(--medium);
 }
