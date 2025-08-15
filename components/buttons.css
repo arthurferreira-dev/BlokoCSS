@@ -3,15 +3,47 @@
 @import url('typography/text.css');
 @import url('spacing/paddings.css');
 @import url('borders/radius.css');
+@import url('interactivity/cursor.css');
+@import url('transition/duration.css');
+
+button.btn-primary, button.btn-secondary, button.btn-tertiary {
+    padding: var(--pd-2-5);
+    border-radius: var(--lg);
+    border: none;
+    font-size: var(--tm-lg);
+    transition-duration: var(--400);
+    width: 100px;
+}
 
 button.btn-primary {
     background-color: var(--white);
     color: var(--black);
-    padding: var(--pd-2-5);
-    border-radius: var(--lg);
-    border: none;
+}
+
+button.btn-secondary {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+button.btn-tertiary {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Hovers */
+
+button.btn-primary:hover, button.btn-secondary:hover, button.btn-tertiary:hover {
+    cursor: var(--pointer);
 }
 
 button.btn-primary:hover {
     background-color: var(--silver);
+}
+
+button.btn-secondary:hover {
+    background-color: var(--dim-gray);
+}
+
+button.btn-tertiary:hover {
+    background-color: #101010;
 }

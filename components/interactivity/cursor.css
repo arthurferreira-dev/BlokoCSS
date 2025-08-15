@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root {
+    --pointer: pointer;
+    --wait: wait;
+    --text: text;
+    --move: move;
+    --help: help;
+    --nt-allowed: not-allowed;
+    --none: none;
+    --progress: progress;
+    --crosshair: cell;
+}
+
+.cursor-auto:hover {
+    cursor: auto;
+}
+
+.cursor-pointer:hover {
+    cursor: var(--pointer);
+}
+
+.cursor-wait:hover {
+    cursor: var(--wait);
+}
+
+.cursor-text:hover {
+    cursor: var(--text);
+}
+
+.cursor-move:hover {
+    cursor: var(--move);
+}
+
+.cursor-help:hover {
+    cursor: var(--help);
+}
+
+.cursor-nt-allowed:hover {
+    cursor: var(--nt-allowed);
+}
+
+.cursor-none:hover {
+    cursor: var(--none);
+}
+
+.cursor-progress:hover {
+    cursor: var(--progress);
+}
+
+.cursor-crosshair:hover {
+    cursor: var(--crosshair);
+}

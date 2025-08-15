@@ -47,3 +47,7 @@
 .rounded-full {
     border-radius: var(--full);
 }
+
+.rounded-circle {
+    border-radius: 50%;
+}

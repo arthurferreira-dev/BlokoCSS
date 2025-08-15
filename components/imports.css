@@ -7,3 +7,6 @@
 @import url('typography/fonts.css'); /* Fontes do BlokoCSS */
 @import url('typography/text.css'); /* Textos do BlokoCSS */
 @import url('typography/CommonColors.css'); /* CommonColors do BlokoCSS */
+@import url('interactivity/cursor.css'); /* Cursores do BlokoCSS */
+@import url('layout/codes.css'); /* Blocos de Códigos */
+@import url('typography/CommonColors.css'); /* CommonColors do BlokoCSS */

@@ -1,12 +1,7 @@
 @charset "UTF-8";
 @import url('components/imports.css'); /* Arquivo de importação de vários arquivos */
-
-/*
-    Organização por importância de carregamento:
-    * spacing
-    * layout
-    * typography (por último SEMPRE)
-*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css'); /* Icones da Font Aweasome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css'); /* Icones da Remixicon */
 
 :root {
     --zr-pd: 0px;
