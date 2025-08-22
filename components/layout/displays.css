@@ -1,21 +1,23 @@
-@charset "UTF-8";
-
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .block {
-    display: block;
-}
-
-.inline {
-    display: inline;
+  display: block;
 }
 
 .inline-block {
-    display: inline-block;
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=displays.css.map */

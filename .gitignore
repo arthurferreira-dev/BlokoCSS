@@ -1,2 +1,7 @@
 # Visual Studio Code Config
 *.vscode
+
+# Sass Configs
+*.sass
+*.scss
+*.css.map

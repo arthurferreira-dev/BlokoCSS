@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+}
