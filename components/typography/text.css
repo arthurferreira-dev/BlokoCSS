@@ -1,251 +1,217 @@
-@charset "UTF-8";
-@import url('CommonColors.css');
-
-:root {
-    --nowraps: nowrap;
-    --extra-small: 1rem;
-    --small: 1.25rem;
-    --base: 1.5rem;
-    --lg-xl: 1.75rem;
-    --2xl: 2rem;
-    --3xl: 2.25rem;
-    --4xl: 2.50rem;
-    --tm-xs: 0.75rem;
-    --tm-sm: 0.875rem;
-    --tm-bs: 1rem;
-    --tm-lg: 1.125rem;
-    --tm-xl: 1.25rem;
-    --tm-2xl: 1.5rem;
-    --tm-3xl: 1.875rem;
-    --tm-4xl: 2.25rem;
-}
-
-/* Alinhamentos de Textos */
-
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
-/* Estilos de Letras */
-
 .text-upper {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .text-lower {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
-.text-capi, .text-capita {
-    text-transform: capitalize;
+.text-capital {
+  text-transform: capitalize;
 }
-
-/* Transbordamento de Texto */
-
-.text-truncate {
-    overflow: hidden;
-    white-space: var(--nowraps);
-    text-overflow: ellipsis;
-}
-
-.text-wrap {
-    text-wrap: wrap;
-}
-
-.text-nowrap {
-    text-wrap: var(--nowraps);
-}
-
-/* Text-Colors inspirados no Tailwind CSS v4.1 */
 
 .text-white {
-    color: var(--white);
-}
-
-.text-black {
-    color: var(--black);
+  color: #FFFFFF;
 }
 
 .text-silver {
-    color: var(--silver);
+  color: #C0C0C0;
 }
 
 .text-gray {
-    color: var(--gray);
+  color: #808080;
 }
 
-.text-grayDim {
-    color: var(--dim-gray);
+.text-dimGray {
+  color: #696969;
+}
+
+.text-darkGray {
+  color: #363636;
 }
 
 .text-stone {
-    color: var(--stone);
+  color: #4A5565;
 }
 
 .text-neutral {
-    color: var(--neutral);
+  color: #45556C;
+}
+
+.text-black {
+  color: #000000;
 }
 
 .text-red {
-    color: var(--red);
+  color: #dc3545;
 }
 
 .text-marron {
-    color: var(--marron);
+  color: #800000;
 }
 
-.text-wine, .text-vinho {
-    color: var(--wine);
+.text-wine {
+  color: #A93226;
 }
 
-.text-wineDark, .text-vinhoDark {
-    color: var(--wine-dark);
+.text-wineDark {
+  color: #9F0712;
 }
 
 .text-brown {
-    color: var(--brown);
+  color: #895129;
 }
 
 .text-yellow {
-    color: var(--yellow);
+  color: #FFFF00;
 }
 
 .text-gold {
-    color: var(--gold);
+  color: #FFD700;
 }
 
 .text-olive {
-    color: var(--olive);
-}
-
-.text-orangeYellow {
-    color: var(--orange-yellow);
+  color: #808000;
 }
 
 .text-orange {
-    color: var(--orange);
+  color: #FF8904;
+}
+
+.text-orangeYellow {
+  color: #FFB93B;
 }
 
 .text-tomato {
-    color: var(--tomato);
+  color: #FF6347;
 }
 
 .text-lime {
-    color: var(--lime-green);
+  color: #00FF00;
 }
 
-.text-greenDark {
-    color: var(--dark-green);
+.text-darkGreen {
+  color: #008000;
 }
 
-.texxt-aqua {
-    color: var(--aqua);
+.text-aqua {
+  color: #00FFFF;
 }
 
 .text-teal {
-    color: var(--teal);
+  color: #008080;
 }
 
 .text-blue {
-    color: var(--blue);
+  color: #0000FF;
 }
 
 .text-blueLight {
-    color: var(--blue-light);
+  color: #434EE0;
 }
 
 .text-navy {
-    color: var(--navy-blue);
+  color: #000080;
 }
 
 .text-pink {
-    color: var(--pink);
+  color: #FF00FF;
 }
 
 .text-hotPink {
-    color: var(--hot-pink);
+  color: #FF69B4;
 }
 
 .text-pinkFocus {
-    color: var(--pink-focus);
+  color: #F6339A;
 }
 
 .text-pinkDark {
-    color: var(--pink-dark);
+  color: #C92AB6;
 }
 
 .text-purplePink {
-    color: var(--purple-pink);
-}
-
-.text-purpleDark {
-    color: var(--purple-dark);    
+  color: #961EC9;
 }
 
 .text-purpleLight {
-    color: var(--purple-light);
+  color: #732EDB;
 }
 
-.text-uzi {
-    color: var(--purple-uzi);
+.text-purpleUzi {
+  color: #631BCF;
 }
 
 .text-indigo {
-    color: var(--indigo);
+  color: #4B0082;
 }
 
-/* Font-size */
-
-.text-xsm {
-    font-size: var(--tm-xs);
-    line-height: var(--extra-small);   
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-sm {
-    font-size: var(--tm-sm);
-    line-height: var(--small);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.text-bs {
-    font-size: var(--tm-bs);
-    line-height: var(--base);
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
-    font-size: var(--tm-lg);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
-    font-size: var(--tm-xl);
-}
-
-.text-lg, .text-xl {
-    line-height: var(--lg-xl);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
-    font-size: var(--tm-2xl);
-    line-height: var(--2xl);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
-    font-size: var(--tm-3xl);
-    line-height: var(--3xl);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
-    font-size: var(--tm-4xl);
-    line-height: var(--4xl);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
+
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}/*# sourceMappingURL=text.css.map */

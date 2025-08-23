@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Google+Sans+Code&family=Lora&family=Inter");
+.font-mono {
+  font-family: ui-monospace, Monaco, Consolas, "Courier New", monospace;
+}
+
+.font-serif {
+  font-family: ui-serif, "Times New Roman", Georgia, Times, serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, sans-serif, system-ui;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif, ui-sans-serif;
+}
+
+.font-open {
+  font-family: "Open Sans", sans-serif, ui-sans-serif;
+}
+
+.font-google {
+  font-family: "Google Sans Code", monospace, "Courier New", sans-serif, ui-sans-serif;
+}
+
+.font-lora {
+  font-family: "Lora", "Times New Roman", ui-serif, serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif, ui-sans-serif;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+.font-light {
+  font-weight: light;
+}
+
+.font-lighter {
+  font-weight: lighter;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal-style {
+  font-style: normal;
+}
+
+.font-italic {
+  font-style: italic;
+}/*# sourceMappingURL=fonts.css.map */
