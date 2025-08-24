@@ -6,8 +6,55 @@ button.btn-primary, button.btn-secondary, button.btn-tertiary {
   transition-duration: 400ms;
   width: 100px;
 }
+button.btn-primary:hover, button.btn-secondary:hover, button.btn-tertiary:hover {
+  cursor: pointer;
+}
 
 button.btn-primary {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+button.btn-primary:hover {
+  background-color: #C0C0C0;
+}
+
+button.btn-secondary {
+  background-color: #808080;
+  color: #FFFFFF;
+}
+button.btn-secondary:hover {
+  background-color: #696969;
+}
+
+button.btn-tertiary {
   background-color: #000000;
   color: #FFFFFF;
-}/*# sourceMappingURL=buttons.css.map */
+}
+button.btn-tertiary:hover {
+  background-color: #101010;
+}
+
+button.btn-shake:hover {
+  animation: shake 300ms linear infinite both;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

@@ -34,15 +34,15 @@
   color: #C0C0C0;
 }
 
-.text-gray {
+.text-gray-5 {
   color: #808080;
 }
 
-.text-dimGray {
+.text-gray-3 {
   color: #696969;
 }
 
-.text-darkGray {
+.text-gray-8 {
   color: #363636;
 }
 
@@ -66,11 +66,11 @@
   color: #800000;
 }
 
-.text-wine {
+.text-wine-5 {
   color: #A93226;
 }
 
-.text-wineDark {
+.text-wine-7 {
   color: #9F0712;
 }
 
@@ -102,11 +102,11 @@
   color: #FF6347;
 }
 
-.text-lime {
+.text-green-3 {
   color: #00FF00;
 }
 
-.text-darkGreen {
+.text-green-6 {
   color: #008000;
 }
 
@@ -122,7 +122,7 @@
   color: #0000FF;
 }
 
-.text-blueLight {
+.text-blue-2 {
   color: #434EE0;
 }
 
@@ -134,15 +134,15 @@
   color: #FF00FF;
 }
 
-.text-hotPink {
+.text-pink-6 {
   color: #FF69B4;
 }
 
-.text-pinkFocus {
+.text-pink-7 {
   color: #F6339A;
 }
 
-.text-pinkDark {
+.text-pink-8 {
   color: #C92AB6;
 }
 
@@ -150,11 +150,11 @@
   color: #961EC9;
 }
 
-.text-purpleLight {
+.text-purple-4 {
   color: #732EDB;
 }
 
-.text-purpleUzi {
+.text-purple {
   color: #631BCF;
 }
 

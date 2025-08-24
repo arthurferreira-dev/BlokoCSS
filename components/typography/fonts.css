@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Google+Sans+Code&family=Lora&family=Inter");
+@font-face {
+  font-family: "Bebas Regular";
+  src: url("/src/bebas/Bebas-Regular.ttf") format("truetype"), url("/src/bebas/Bebas-Regular.otf"), format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Simply The Best";
+  src: url("/src/kg_simply_the_best/KGSimplytheBest.ttf") format("truetype"), url("/src/kg_simply_the_best/KGSimplytheBest.otf"), format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nexa Heavy";
+  src: url("/src/nexa/Nexa-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Starkwalker Normal";
+  src: url("/src/starkwalker_classic/StarkwalkerClassic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Starkwalker Italic";
+  src: url("/src/starkwalker_classic/StarkwalkerClassicIt.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vogue";
+  src: url("/src/vogue/Vogue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .font-mono {
   font-family: ui-monospace, Monaco, Consolas, "Courier New", monospace;
 }
@@ -9,6 +45,30 @@
 
 .font-sans {
   font-family: ui-sans-serif, sans-serif, system-ui;
+}
+
+.font-bebas {
+  font-family: "Bebas Regular", Trebuchet MS, Helvetica, Impact, sans-serif, ui-sans-serif;
+}
+
+.font-simply {
+  font-family: "Simply The Best", Comic Sans MS, monospace, system-ui;
+}
+
+.font-nexa {
+  font-family: "Nexa Heavy", Arial, Helvetica, ui-sans-serif, sans-serif;
+}
+
+.font-starkwalker {
+  font-family: "Starkwalker Normal", Georgia, Constantia, ui-serif, serif;
+}
+
+.font-starkwalker-italic {
+  font-family: "Starkwalker Italic", Georgia, Constantia, ui-serif, serif;
+}
+
+.font-vogue {
+  font-family: "Vogue", "Times New Roman", Times, Georgia, Constantia, ui-serif, serif;
 }
 
 .font-roboto {

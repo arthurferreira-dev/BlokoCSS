@@ -1,0 +1,19 @@
+.img-slider {
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img-slider > img.slider-items {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  transition: all ease-in-out 500ms;
+}
+.img-slider > img.slider-items:hover {
+  width: 25%;
+}
