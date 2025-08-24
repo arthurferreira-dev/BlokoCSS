@@ -8,7 +8,7 @@ O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutiliz�
 
 * &#x1F9E9; Estilo modular e personalizável
 
-* &#x1F680; Sem dependências externas
+* &#x1F680; Sem dependências externas de libs CSS
 
 * &#x1F9FC; Sintaxe clara e fácil de manter
 
