@@ -3,10 +3,15 @@
 @import url('spacing/margins.css'); /* Margins do BlokoCSS */
 @import url('spacing/paddings.css'); /* Paddings do BlokoCSS */
 @import url('layout/containers.css'); /* Containers do BlokoCSS */
+@import url('layout/codes.css'); /* Blocos de Códigos */
+@import url('layout/directions.css');
+@import url('layout/displays.css');
+@import url('layout/slider.css');
 @import url('buttons.css'); /* Botões do BlokoCSS */
 @import url('typography/fonts.css'); /* Fontes do BlokoCSS */
 @import url('typography/text.css'); /* Textos do BlokoCSS */
-@import url('typography/CommonColors.css'); /* CommonColors do BlokoCSS */
 @import url('interactivity/cursor.css'); /* Cursores do BlokoCSS */
-@import url('layout/codes.css'); /* Blocos de Códigos */
-@import url('typography/CommonColors.css'); /* CommonColors do BlokoCSS */
+@import url('interactivity/icons-container.css');
+@import url('interactivity/scrolls.css');
+@import url('borders/radius.css');
+@import url('transition/durations.css');
