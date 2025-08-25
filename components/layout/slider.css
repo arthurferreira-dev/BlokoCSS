@@ -9,11 +9,12 @@
 .img-slider > img.slider-items {
   width: 10%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   border: 2px solid #FFFFFF;
   transition: all ease-in-out 500ms;
 }
 .img-slider > img.slider-items:hover {
   width: 25%;
-}
+}/*# sourceMappingURL=slider.css.map */
