@@ -1,0 +1,111 @@
+.border-solid {
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-double {
+  border-style: double;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-groove {
+  border-style: groove;
+}
+
+.border-ridge {
+  border-style: ridge;
+}
+
+.border-inset {
+  border-style: inset;
+}
+
+.border-outset {
+  border-style: outset;
+}
+
+.border-hidden {
+  border-style: hidden;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.border-inherit {
+  border-style: inherit;
+}
+
+.border-initial {
+  border-style: initial;
+}
+
+.border-revert {
+  border-style: revert;
+}
+
+.border-unset {
+  border-style: unset;
+}
+
+.divide-solid > :not(:last-child) {
+  border-style: solid;
+}
+
+.divide-dashed > :not(:last-child) {
+  border-style: dashed;
+}
+
+.divide-double > :not(:last-child) {
+  border-style: double;
+}
+
+.divide-dotted > :not(:last-child) {
+  border-style: dotted;
+}
+
+.divide-groove > :not(:last-child) {
+  border-style: groove;
+}
+
+.divide-ridge > :not(:last-child) {
+  border-style: ridge;
+}
+
+.divide-inset > :not(:last-child) {
+  border-style: inset;
+}
+
+.divide-outset > :not(:last-child) {
+  border-style: outset;
+}
+
+.divide-hidden > :not(:last-child) {
+  border-style: hidden;
+}
+
+.divide-none > :not(:last-child) {
+  border-style: none;
+}
+
+.divide-inherit > :not(:last-child) {
+  border-style: inherit;
+}
+
+.divide-initial > :not(:last-child) {
+  border-style: initial;
+}
+
+.divide-revert > :not(:last-child) {
+  border-style: revert;
+}
+
+.divide-unset > :not(:last-child) {
+  border-style: unset;
+}/*# sourceMappingURL=border-style.css.map */

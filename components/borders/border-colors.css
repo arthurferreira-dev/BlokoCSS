@@ -432,4 +432,16 @@
 
 .border-indigo {
   border-color: #4B0082;
+}
+
+.border-inherit {
+  border-color: inherit;
+}
+
+.border-current {
+  border-color: currentColor;
+}
+
+.border-transparent {
+  border-color: transparent;
 }/*# sourceMappingURL=border-colors.css.map */

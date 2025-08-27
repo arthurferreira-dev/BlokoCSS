@@ -96,4 +96,44 @@
 
 .border-l-8 {
   border-left-width: 8px;
+}
+
+.border-x-none {
+  border-inline-width: 0px;
+}
+
+.border-x {
+  border-inline-width: 1px;
+}
+
+.border-x-2 {
+  border-inline-width: 2px;
+}
+
+.border-x-4 {
+  border-inline-width: 4px;
+}
+
+.border-x-8 {
+  border-inline-width: 8px;
+}
+
+.border-y-none {
+  border-block-width: 0px;
+}
+
+.border-y {
+  border-block-width: 1px;
+}
+
+.border-y-2 {
+  border-block-width: 2px;
+}
+
+.border-y-4 {
+  border-block-width: 4px;
+}
+
+.border-y-8 {
+  border-block-width: 8px;
 }/*# sourceMappingURL=border.css.map */
