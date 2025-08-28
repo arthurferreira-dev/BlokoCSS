@@ -514,4 +514,12 @@
 
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
 }/*# sourceMappingURL=text.css.map */

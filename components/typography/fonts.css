@@ -91,28 +91,40 @@
   font-family: "Inter", sans-serif, ui-sans-serif;
 }
 
-.font-normal {
-  font-weight: normal;
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.font-bolder {
-  font-weight: bolder;
-}
-
-.font-light {
-  font-weight: light;
+.font-thin {
+  font-weight: 100;
 }
 
 .font-lighter {
-  font-weight: lighter;
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-bolder {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-normal-style {
