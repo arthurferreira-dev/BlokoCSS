@@ -15,15 +15,15 @@ button.btn-primary {
   color: #000000;
 }
 button.btn-primary:hover {
-  background-color: #C0C0C0;
+  background-color: #bdbdbd;
 }
 
 button.btn-secondary {
-  background-color: #808080;
+  background-color: #545454;
   color: #FFFFFF;
 }
 button.btn-secondary:hover {
-  background-color: #696969;
+  background-color: #464646;
 }
 
 button.btn-tertiary {
@@ -31,11 +31,31 @@ button.btn-tertiary {
   color: #FFFFFF;
 }
 button.btn-tertiary:hover {
-  background-color: #101010;
+  background-color: #141414;
 }
 
+button.btn-shake {
+  background-color: #0000ff;
+  color: #FFFFFF;
+  text-align: center;
+}
 button.btn-shake:hover {
   animation: shake 300ms linear infinite both;
+  cursor: pointer;
+}
+
+button.to-up {
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.125rem;
+  transition-duration: 400ms;
+  width: 100px;
+  background-color: #0ff009;
+  color: #FFFFFF;
+}
+button.back-to-top:hover {
+  background-color: #1dd213;
 }
 
 @keyframes shake {
