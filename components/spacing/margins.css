@@ -222,18 +222,26 @@
   margin: auto;
 }
 
+.mx-auto {
+  margin-block: auto;
+}
+
+.my-auto {
+  margin-inline: auto;
+}
+
 .ml-auto {
-  margin: auto;
+  margin-left: auto;
 }
 
 .mr-auto {
-  margin: auto;
+  margin-right: auto;
 }
 
 .mt-auto {
-  margin: auto;
+  margin-top: auto;
 }
 
 .mb-auto {
-  margin: auto;
-}
+  margin-bottom: auto;
+}/*# sourceMappingURL=margins.css.map */

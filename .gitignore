@@ -2,6 +2,7 @@
 *.vscode
 
 # Sass Configs
-*.sass
 *.scss
 *.css.map
+!bloko.scss
+*sass/

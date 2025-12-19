@@ -1,3 +1,7 @@
+.cursor-\[not_allowed\]:hover {
+  cursor: not-allowed;
+}
+
 .cursor-pointer:hover {
   cursor: pointer;
 }
@@ -18,10 +22,6 @@
   cursor: help;
 }
 
-.cursor-nt-allowed:hover {
-  cursor: not-allowed;
-}
-
 .cursor-none:hover {
   cursor: none;
 }
@@ -32,4 +32,4 @@
 
 .cursor-crosshair:hover {
   cursor: cell;
-}
+}/*# sourceMappingURL=cursor.css.map */

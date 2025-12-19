@@ -1,0 +1,15 @@
+.aspect-square {
+  aspect-ratio: 1;
+}
+
+.aspect-video {
+  aspect-ratio: 1.7777777778;
+}
+
+.aspect-3\/2 {
+  aspect-ratio: 1.5;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
+}/*# sourceMappingURL=aspectRatio.css.map */

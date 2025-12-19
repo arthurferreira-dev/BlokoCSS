@@ -1,0 +1,151 @@
+.border-white {
+  border-color: hsl(0, 0%, 100%);
+}
+
+.border-silver {
+  border-color: hsl(0, 0%, 75%);
+}
+
+.border-gray {
+  border-color: hsl(0, 0%, 50%);
+}
+
+.border-slate {
+  border-color: hsl(210, 9%, 31%);
+}
+
+.border-stone {
+  border-color: hsl(216, 15%, 34%);
+}
+
+.border-neutral {
+  border-color: hsl(215, 22%, 35%);
+}
+
+.border-black {
+  border-color: hsl(0, 0%, 0%);
+}
+
+.border-red {
+  border-color: hsl(354, 70%, 54%);
+}
+
+.border-marron {
+  border-color: hsl(0, 100%, 25%);
+}
+
+.border-wine {
+  border-color: hsl(5, 63%, 41%);
+}
+
+.border-crimson {
+  border-color: hsl(343, 79%, 36%);
+}
+
+.border-brown {
+  border-color: hsl(33, 60%, 32%);
+}
+
+.border-yellow {
+  border-color: hsl(60, 100%, 50%);
+}
+
+.border-gold {
+  border-color: hsl(51, 100%, 50%);
+}
+
+.border-olive {
+  border-color: hsl(60, 100%, 25%);
+}
+
+.border-sunburst {
+  border-color: hsl(46, 94%, 55%);
+}
+
+.border-orange {
+  border-color: hsl(32, 100%, 51%);
+}
+
+.border-tomato {
+  border-color: hsl(9, 100%, 64%);
+}
+
+.border-lime {
+  border-color: hsl(120, 100%, 50%);
+}
+
+.border-aqua {
+  border-color: hsl(180, 100%, 50%);
+}
+
+.border-teal {
+  border-color: hsl(180, 100%, 25%);
+}
+
+.border-blue {
+  border-color: hsl(240, 100%, 50%);
+}
+
+.border-pink {
+  border-color: hsl(300, 100%, 50%);
+}
+
+.border-purple {
+  border-color: hsl(282, 74%, 45%);
+}
+
+.border-indigo {
+  border-color: hsl(275, 100%, 25%);
+}
+
+.border-dim_gray {
+  border-color: hsl(0, 0%, 41%);
+}
+
+.border-gray_dark {
+  border-color: hsl(219, 19%, 21%);
+}
+
+.border-wine_dark {
+  border-color: hsl(356, 92%, 33%);
+}
+
+.border-orange_yellow {
+  border-color: hsl(39, 100%, 62%);
+}
+
+.border-dark_green {
+  border-color: hsl(120, 100%, 25%);
+}
+
+.border-blue_light {
+  border-color: hsl(236, 72%, 57%);
+}
+
+.border-navy_blue {
+  border-color: hsl(240, 100%, 25%);
+}
+
+.border-hot_pink {
+  border-color: hsl(330, 100%, 71%);
+}
+
+.border-pink_focus {
+  border-color: hsl(328, 92%, 58%);
+}
+
+.border-pink_dark {
+  border-color: hsl(307, 65%, 48%);
+}
+
+.border-purple_dark {
+  border-color: hsl(300, 100%, 25%);
+}
+
+.border-purple_light {
+  border-color: hsl(264, 71%, 52%);
+}
+
+.border-purple_uzi {
+  border-color: hsl(264, 77%, 46%);
+}/*# sourceMappingURL=borderColors.css.map */

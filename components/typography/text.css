@@ -1,251 +1,236 @@
-@charset "UTF-8";
-@import url('CommonColors.css');
-
-:root {
-    --nowraps: nowrap;
-    --extra-small: 1rem;
-    --small: 1.25rem;
-    --base: 1.5rem;
-    --lg-xl: 1.75rem;
-    --2xl: 2rem;
-    --3xl: 2.25rem;
-    --4xl: 2.50rem;
-    --tm-xs: 0.75rem;
-    --tm-sm: 0.875rem;
-    --tm-bs: 1rem;
-    --tm-lg: 1.125rem;
-    --tm-xl: 1.25rem;
-    --tm-2xl: 1.5rem;
-    --tm-3xl: 1.875rem;
-    --tm-4xl: 2.25rem;
-}
-
-/* Alinhamentos de Textos */
-
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
-/* Estilos de Letras */
-
-.text-upper {
-    text-transform: uppercase;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-.text-lower {
-    text-transform: lowercase;
+.text-lowercase {
+  text-transform: lowercase;
 }
 
-.text-capi, .text-capita {
-    text-transform: capitalize;
+.text-capitalize {
+  text-transform: capitalize;
 }
-
-/* Transbordamento de Texto */
 
 .text-truncate {
-    overflow: hidden;
-    white-space: var(--nowraps);
-    text-overflow: ellipsis;
-}
-
-.text-wrap {
-    text-wrap: wrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .text-nowrap {
-    text-wrap: var(--nowraps);
+  text-wrap: nowrap;
 }
 
-/* Text-Colors inspirados no Tailwind CSS v4.1 */
-
-.text-white {
-    color: var(--white);
+.text-wrap {
+  text-wrap: wrap;
 }
-
-.text-black {
-    color: var(--black);
-}
-
-.text-silver {
-    color: var(--silver);
-}
-
-.text-gray {
-    color: var(--gray);
-}
-
-.text-grayDim {
-    color: var(--dim-gray);
-}
-
-.text-stone {
-    color: var(--stone);
-}
-
-.text-neutral {
-    color: var(--neutral);
-}
-
-.text-red {
-    color: var(--red);
-}
-
-.text-marron {
-    color: var(--marron);
-}
-
-.text-wine, .text-vinho {
-    color: var(--wine);
-}
-
-.text-wineDark, .text-vinhoDark {
-    color: var(--wine-dark);
-}
-
-.text-brown {
-    color: var(--brown);
-}
-
-.text-yellow {
-    color: var(--yellow);
-}
-
-.text-gold {
-    color: var(--gold);
-}
-
-.text-olive {
-    color: var(--olive);
-}
-
-.text-orangeYellow {
-    color: var(--orange-yellow);
-}
-
-.text-orange {
-    color: var(--orange);
-}
-
-.text-tomato {
-    color: var(--tomato);
-}
-
-.text-lime {
-    color: var(--lime-green);
-}
-
-.text-greenDark {
-    color: var(--dark-green);
-}
-
-.texxt-aqua {
-    color: var(--aqua);
-}
-
-.text-teal {
-    color: var(--teal);
-}
-
-.text-blue {
-    color: var(--blue);
-}
-
-.text-blueLight {
-    color: var(--blue-light);
-}
-
-.text-navy {
-    color: var(--navy-blue);
-}
-
-.text-pink {
-    color: var(--pink);
-}
-
-.text-hotPink {
-    color: var(--hot-pink);
-}
-
-.text-pinkFocus {
-    color: var(--pink-focus);
-}
-
-.text-pinkDark {
-    color: var(--pink-dark);
-}
-
-.text-purplePink {
-    color: var(--purple-pink);
-}
-
-.text-purpleDark {
-    color: var(--purple-dark);    
-}
-
-.text-purpleLight {
-    color: var(--purple-light);
-}
-
-.text-uzi {
-    color: var(--purple-uzi);
-}
-
-.text-indigo {
-    color: var(--indigo);
-}
-
-/* Font-size */
 
 .text-xsm {
-    font-size: var(--tm-xs);
-    line-height: var(--extra-small);   
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-sm {
-    font-size: var(--tm-sm);
-    line-height: var(--small);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-bs {
-    font-size: var(--tm-bs);
-    line-height: var(--base);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
-    font-size: var(--tm-lg);
+  font-size: 1.125rem;
 }
 
 .text-xl {
-    font-size: var(--tm-xl);
+  font-size: 1.25rem;
 }
 
-.text-lg, .text-xl {
-    line-height: var(--lg-xl);
+.text-lg,
+.text-xl {
+  line-height: 1.75rem;
 }
 
 .text-2xl {
-    font-size: var(--tm-2xl);
-    line-height: var(--2xl);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
-    font-size: var(--tm-3xl);
-    line-height: var(--3xl);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
-    font-size: var(--tm-4xl);
-    line-height: var(--4xl);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-silver {
+  color: hsl(0, 0%, 75%);
+}
+
+.text-gray {
+  color: hsl(0, 0%, 50%);
+}
+
+.text-slate {
+  color: hsl(210, 9%, 31%);
+}
+
+.text-stone {
+  color: hsl(216, 15%, 34%);
+}
+
+.text-neutral {
+  color: hsl(215, 22%, 35%);
+}
+
+.text-black {
+  color: hsl(0, 0%, 0%);
+}
+
+.text-red {
+  color: hsl(354, 70%, 54%);
+}
+
+.text-marron {
+  color: hsl(0, 100%, 25%);
+}
+
+.text-wine {
+  color: hsl(5, 63%, 41%);
+}
+
+.text-crimson {
+  color: hsl(343, 79%, 36%);
+}
+
+.text-brown {
+  color: hsl(33, 60%, 32%);
+}
+
+.text-yellow {
+  color: hsl(60, 100%, 50%);
+}
+
+.text-gold {
+  color: hsl(51, 100%, 50%);
+}
+
+.text-olive {
+  color: hsl(60, 100%, 25%);
+}
+
+.text-sunburst {
+  color: hsl(46, 94%, 55%);
+}
+
+.text-orange {
+  color: hsl(32, 100%, 51%);
+}
+
+.text-tomato {
+  color: hsl(9, 100%, 64%);
+}
+
+.text-lime {
+  color: hsl(120, 100%, 50%);
+}
+
+.text-aqua {
+  color: hsl(180, 100%, 50%);
+}
+
+.text-teal {
+  color: hsl(180, 100%, 25%);
+}
+
+.text-blue {
+  color: hsl(240, 100%, 50%);
+}
+
+.text-pink {
+  color: hsl(300, 100%, 50%);
+}
+
+.text-purple {
+  color: hsl(282, 74%, 45%);
+}
+
+.text-indigo {
+  color: hsl(275, 100%, 25%);
+}
+
+.text-\[dim_gray\] {
+  color: hsl(0, 0%, 41%);
+}
+
+.text-\[gray_dark\] {
+  color: hsl(219, 19%, 21%);
+}
+
+.text-\[wine_dark\] {
+  color: hsl(356, 92%, 33%);
+}
+
+.text-\[orange_yellow\] {
+  color: hsl(39, 100%, 62%);
+}
+
+.text-\[dark_green\] {
+  color: hsl(120, 100%, 25%);
+}
+
+.text-\[blue_light\] {
+  color: hsl(236, 72%, 57%);
+}
+
+.text-\[navy_blue\] {
+  color: hsl(240, 100%, 25%);
+}
+
+.text-\[hot_pink\] {
+  color: hsl(330, 100%, 71%);
+}
+
+.text-\[pink_focus\] {
+  color: hsl(328, 92%, 58%);
+}
+
+.text-\[pink_dark\] {
+  color: hsl(307, 65%, 48%);
+}
+
+.text-\[purple_dark\] {
+  color: hsl(300, 100%, 25%);
+}
+
+.text-\[purple_light\] {
+  color: hsl(264, 71%, 52%);
+}
+
+.text-\[purple_uzi\] {
+  color: hsl(264, 77%, 46%);
+}/*# sourceMappingURL=text.css.map */

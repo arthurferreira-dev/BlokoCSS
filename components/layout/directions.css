@@ -14,18 +14,6 @@
   flex-direction: column-reverse;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
-.flex-wrap-r {
-  flex-wrap: wrap-reverse;
-}
-
 .items-center {
   align-items: center;
 }

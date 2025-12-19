@@ -1,0 +1,23 @@
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-bottom {
+  float: bottom;
+}
+
+.float-top {
+  float: top;
+}
+
+.float-start {
+  float: inline-start;
+}
+
+.float-end {
+  float: inline-end;
+}/*# sourceMappingURL=float.css.map */
