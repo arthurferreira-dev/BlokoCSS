@@ -1,0 +1,8 @@
+.icons-container * {
+  transition: scale 300ms, filter 300ms;
+}
+
+.icons-container:has(:hover) :not(:hover) {
+  scale: 1.1;
+  filter: blur(2px);
+}/*# sourceMappingURL=icons-container.css.map */
