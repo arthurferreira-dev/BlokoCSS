@@ -19,11 +19,18 @@ O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutiliz�
 Você pode utilizar dessas seguintes formas:
 
 1. Via CDN
+
+### Versão Normal
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/bloko.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/css/bloko.css" />
 ```
 
-2. Baixando o Arquivo (*.ZIP*)
+### Versão Minificada
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/css/bloko.min.css" />
+```
+
+1. Baixando o Arquivo (*.ZIP*)
 
 <a href="">
 <img src="">
