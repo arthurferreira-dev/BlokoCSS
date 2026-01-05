@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@use "./utils/mixins";
+@forward "./borders";
+@forward "./flex-grid";
+@forward "./interactivity";
+@forward "./layout";
+@forward "./sizing";
+@forward "./spacing";
+@forward "./components";
+
+*,
+::after,
+::backdrop,
+::before,
+::file-selector-button {
+  @include mixins.Reset-Charset();
+}
+
+body {
+  @include mixins.Body();
+}
+
+:host,
+html,
+body {
+  @include mixins.Html-Body();
+}
+
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  @include mixins.LinkConfigs();
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+::file-selector-button,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  background: 0 0;
+}
+
+textarea {
+  @include mixins.TextAreaConfigs();
+}
+
+input {
+  @include mixins.InputConfigs();
+}
+
+input:where(:not([type="button"], [type="reset"], [type="submit"])),
+select,
+textarea {
+  border-width: 1px;
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+::placeholder {
+  opacity: 1;
+  color: color-mix(in oklch, currentColor 50%, #0000);
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}

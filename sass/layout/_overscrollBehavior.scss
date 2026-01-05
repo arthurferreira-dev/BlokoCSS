@@ -1,0 +1,29 @@
+@use "sass:string";
+
+$base: ("auto", "contain", "none");
+
+@mixin Coord($coord) {
+  @if $coord == "none" {
+    @each $c in $base {
+      .overscroll-#{$c} {
+        overscroll-behavior: string.unquote($c);
+      }
+    }
+  } @else if $coord == "x" {
+    @each $c in $base {
+      .overscroll-x-#{$c} {
+        overscroll-behavior-x: string.unquote($c);
+      }
+    }
+  } @else if $coord == "y" {
+    @each $c in $base {
+      .overscroll-y-#{$c} {
+        overscroll-behavior-y: string.unquote($c);
+      }
+    }
+  }
+}
+
+@include Coord('none');
+@include Coord('x');
+@include Coord('y');

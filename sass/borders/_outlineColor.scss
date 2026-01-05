@@ -1,0 +1,34 @@
+@use "sass:string";
+@use "sass:meta";
+@use "../utils/CommonColors" as ccolors;
+@use "../utils/variables" as current;
+
+@each $name, $color in ccolors.$colors {
+  @if meta.type-of($color) != "map" {
+    .outline-#{$name} {
+      outline-color: #{$color};
+    }
+  }
+
+  @else {
+    @each $shade, $shade-value in $color {
+      .outline-#{$name}-#{$shade} {
+        outline-color: #{$shade-value};
+      }
+    }
+  }
+}
+
+@each $def in current.$borders-current-colors {
+  $value: "";
+
+  @if $def == "-current" {
+    $value: "currentColor";
+  } @else {
+    $value: $def;
+  }
+
+  .outline#{$def} {
+    border-color: $value;
+  }
+}

@@ -1,0 +1,85 @@
+$positions: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 2rem,
+  auto: auto,
+);
+
+@each $key, $value in $positions {
+  .top-#{$key} {
+    top: $value;
+  }
+  .right-#{$key} {
+    right: $value;
+  }
+  .bottom-#{$key} {
+    bottom: $value;
+  }
+  .left-#{$key} {
+    left: $value;
+  }
+
+  @if $key != auto {
+    .-top-#{$key} {
+      top: -$value;
+    }
+    .-right-#{$key} {
+      right: -$value;
+    }
+    .-bottom-#{$key} {
+      bottom: -$value;
+    }
+    .-left-#{$key} {
+      left: -$value;
+    }
+  }
+}
+
+@each $key, $value in $positions {
+  .inset-#{$key} {
+    top: $value;
+    right: $value;
+    bottom: $value;
+    left: $value;
+  }
+
+  @if $key != auto {
+    .-inset-#{$key} {
+      top: -$value;
+      right: -$value;
+      bottom: -$value;
+      left: -$value;
+    }
+  }
+}
+
+@each $key, $value in $positions {
+  .inset-x-#{$key} {
+    left: $value;
+    right: $value;
+  }
+
+  @if $key != auto {
+    .-inset-x-#{$key} {
+      left: -$value;
+      right: -$value;
+    }
+  }
+}
+
+@each $key, $value in $positions {
+  .inset-y-#{$key} {
+    top: $value;
+    bottom: $value;
+  }
+
+  @if $key != auto {
+    .-inset-y-#{$key} {
+      top: -$value;
+      bottom: -$value;
+    }
+  }
+}

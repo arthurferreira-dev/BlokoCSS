@@ -1,0 +1,15 @@
+@use "../utils/variables" as radius;
+
+@each $name, $radio in radius.$border-radius {
+  $nm: "";
+
+  @if ($name == "") {
+    $nm: "radius";
+  } @else {
+    $nm: "radius-#{$name}";
+  }
+
+  .#{$nm} {
+    border-radius: $radio;
+  }
+}

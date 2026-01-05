@@ -1,0 +1,15 @@
+@use "../utils/variables" as outline;
+
+@each $name, $width in outline.$outlines {
+  $outline: "";
+
+  @if $name == "" {
+    $outline: "outline";
+  } @else {
+    $outline: "outline-#{$name}";
+  }
+
+  .#{$outline} {
+    outline-width: $width;
+  }
+}

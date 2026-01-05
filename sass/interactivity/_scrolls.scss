@@ -1,0 +1,9 @@
+@use "sass:string";
+
+$scrolls: ("auto", "smooth");
+
+@each $name in $scrolls {
+  .scroll-#{$name} {
+    scroll-behavior: string.unquote($name);
+  }
+}

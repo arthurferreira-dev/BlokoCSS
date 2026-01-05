@@ -1,0 +1,59 @@
+$spacing: 0.25rem;
+
+@for $cont from 0 through 10 {
+  .m-#{$cont} {
+    margin: $spacing * $cont;
+  }
+}
+
+@for $cont from 0 through 10 {
+  .ml-#{$cont} {
+    margin-left: $spacing * $cont;
+  }
+}
+
+@for $cont from 0 through 10 {
+  .mr-#{$cont} {
+    margin-right: $spacing * $cont;
+  }
+}
+
+@for $cont from 0 through 10 {
+  .mt-#{$cont} {
+    margin-top: $spacing * $cont;
+  }
+}
+
+@for $cont from 0 through 10 {
+  .mb-#{$cont} {
+    margin-bottom: $spacing * $cont;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-block: auto;
+}
+
+.my-auto {
+  margin-inline: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}

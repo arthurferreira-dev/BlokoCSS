@@ -1,0 +1,8 @@
+@for $num from 1 through 50 {
+  .outline-offset-#{$num} {
+    outline-offset: $num * 1px;
+  }
+  .-outline-offset-#{$num} {
+    outline-offset: $num * -1px;
+  }
+}

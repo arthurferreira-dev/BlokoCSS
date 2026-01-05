@@ -1,0 +1,17 @@
+@use "../utils/variables" as orders;
+
+@each $name, $value in orders.$flex-orders {
+  .order-#{$name} {
+    order: $value;
+  }
+}
+
+@for $p from 1 through 100 {
+  .order-#{$p} {
+    order: $p;
+  }
+
+  .-order-#{$p} {
+    order: $p * -1;
+  }
+}

@@ -1,0 +1,13 @@
+@use "sass:string";
+@use "../utils/variables" as outline;
+
+@each $outline-name in outline.$outline-styles {
+  .outline-#{$outline-name} {
+    @if $outline-name == "hidden" {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    } @else {
+      outline-style: string.unquote($outline-name);
+    }
+  }
+}

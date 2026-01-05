@@ -1,0 +1,25 @@
+$none: 0ms;
+$sm: 75ms;
+$lg: 100ms;
+$mlg: 150ms;
+$ulg: 200ms;
+$xl: 300ms;
+$xxl: 400ms;
+$xxxl: 500ms;
+
+$durations: (
+  "0": $none,
+  "75": $sm,
+  "100": $lg,
+  "150": $mlg,
+  "200": $ulg,
+  "300": $xl,
+  "400": $xxl,
+  "500": $xxxl,
+);
+
+@each $name, $duration in $durations {
+  .duration-#{$name} {
+    transition-duration: $duration;
+  }
+}

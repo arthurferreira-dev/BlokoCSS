@@ -1,0 +1,9 @@
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+@for $s from 2 through 50 {
+  .shrink-#{$s} {
+    flex-grow: $s;
+  }
+}

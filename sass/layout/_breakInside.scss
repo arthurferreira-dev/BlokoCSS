@@ -1,0 +1,8 @@
+@use "sass:string";
+@use "../utils/variables" as breaks;
+
+@each $break in breaks.$inside-breaks {
+  .break-inside-#{$break} {
+    break-inside: string.unquote($break);
+  }
+}

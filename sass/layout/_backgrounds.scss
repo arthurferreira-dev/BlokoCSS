@@ -1,0 +1,16 @@
+@use "sass:meta";
+@use "../utils/CommonColors" as ccolors;
+
+@each $name, $color in ccolors.$colors {
+  @if meta.type-of($color) != "map" {
+    .bg-#{$name} {
+      background-color: #{$color};
+    }
+  } @else {
+    @each $shade, $shade-value in $color {
+      .bg-#{$name}-#{$shade} {
+        background-color: #{$shade-value};
+      }
+    }
+  }
+}

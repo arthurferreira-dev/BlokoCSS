@@ -1,0 +1,12 @@
+@use "sass:string";
+@use "../utils/variables" as border;
+
+@each $style in border.$border-styles {
+  .border-#{$style} {
+    border-style: string.unquote($style);
+  }
+
+  .divide-#{$style} > :not(:last-child) {
+    border-style: string.unquote($style);
+  }
+}

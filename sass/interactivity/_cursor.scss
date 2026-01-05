@@ -1,0 +1,28 @@
+$point: pointer;
+$nt: not-allowed;
+$crosshair: cell;
+
+$cursor: (
+  "pointer": pointer,
+  "wait": wait,
+  "text": text,
+  "move": move,
+  "help": help,
+  "none": none,
+  "progress": progress,
+  "crosshair": $crosshair,
+);
+
+.cursor-\[not_allowed\] {
+  &:hover {
+    cursor: $nt;
+  }
+}
+
+@each $name, $cursor in $cursor {
+  .cursor-#{$name} {
+    &:hover {
+      cursor: $cursor;
+    }
+  }
+}

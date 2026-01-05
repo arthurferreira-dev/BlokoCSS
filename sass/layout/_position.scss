@@ -1,0 +1,9 @@
+@use "sass:string";
+
+$positions: ("static", "fixed", "absolute", "relative", "sticky");
+
+@each $name in $positions {
+  .pos-#{$name} {
+    position: string.unquote($name);
+  }
+}

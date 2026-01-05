@@ -1,0 +1,9 @@
+.flex-grow {
+  flex-grow: 1;
+}
+
+@for $g from 2 through 50 {
+  .grow-#{$g} {
+    flex-grow: $g;
+  }
+}

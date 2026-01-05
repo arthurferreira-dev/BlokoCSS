@@ -1,0 +1,24 @@
+@use "sass:math";
+
+$square: math.div(1, 1);
+$video: math.div(16, 9);
+
+$ratios: ($square, $video, math.div(3, 2));
+
+@each $ratio in $ratios {
+  $name: "";
+  @if $ratio == math.div(1, 1) {
+    $name: "square";
+  } @else if $ratio == math.div(16, 9) {
+    $name: "video";
+  } @else if $ratio == math.div(3, 2) {
+    $name: 3\/2;
+  }
+  .aspect-#{$name} {
+    aspect-ratio: $ratio;
+  }
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
+}

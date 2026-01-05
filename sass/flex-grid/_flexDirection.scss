@@ -1,0 +1,18 @@
+@use "sass:string";
+@use "../utils/variables" as flex;
+
+@each $directions in flex.$flex-directions {
+  @if ($directions == "col") {
+    .flex-#{$directions} {
+      flex-direction: column;
+    }
+  } @else if ($directions == "col-reverse") {
+    .flex-#{$directions} {
+      flex-direction: column-reverse;
+    }
+  } @else {
+    .flex-#{$directions} {
+      flex-direction: string.unquote($directions);
+    }
+  }
+}

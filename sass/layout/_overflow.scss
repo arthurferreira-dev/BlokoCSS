@@ -1,0 +1,15 @@
+@use "sass:string";
+
+$overflows: ("auto", "hidden", "clip", "visible", "scroll");
+
+@mixin OverflowConfig($list, $class, $overflow) {
+  @each $type in $list {
+    .#{$class}-#{$type} {
+      #{$overflow}: string.unquote($type);
+    }
+  }
+}
+
+@include OverflowConfig($overflows, "overflow", overflow);
+@include OverflowConfig($overflows, "overflow-x", overflow-x);
+@include OverflowConfig($overflows, "overflow-y", overflow-y);

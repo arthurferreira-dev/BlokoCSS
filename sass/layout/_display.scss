@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@use "sass:string";
+
+$displays: (
+  "flex",
+  "inline-flex",
+  "block",
+  "inline",
+  "inline-block",
+  "grid",
+  "inline-grid",
+  "flow-root",
+  "contents",
+  "table",
+  "inline-table",
+  "table-caption",
+  "table-cell",
+  "table-column",
+  "table-column-group",
+  "table-header-group",
+  "table-footer-group",
+  "table-row-group",
+  "table-row",
+  "list-item"
+);
+
+@each $name in $displays {
+  .is-#{$name} {
+    display: string.unquote($name);
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+@mixin SrConfigs($position, $wid, $hei, $pd, $margin, $overflow, $clip, $white_space) {
+  position: $position;
+  width: $wid;
+  height: $hei;
+  padding: $pd;
+  margin: $margin;
+  overflow: $overflow;
+  clip: $clip;
+  white-space: $white_space;
+}
+
+.sr-only {
+  @include SrConfigs(absolute, 1px, 1px, 0, -1px, hidden, rect(0, 0, 0, 0), nowrap);
+  border-width: 0;
+}
+
+.not-sr-only {
+  @include SrConfigs(static, auto, auto, 0, 0, visible, auto, normal);
+}

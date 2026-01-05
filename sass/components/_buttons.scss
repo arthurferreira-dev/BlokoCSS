@@ -1,0 +1,72 @@
+@use "sass:meta";
+@use "../utils/CommonColors" as ccolors;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, transform 0.1s ease;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+@each $name, $color in ccolors.$colors {
+  @if meta.type-of($color) != "map" {
+    .btn-#{$name} {
+      background-color: $color;
+      color: if(lightness($color) > 45%, #000, #fff);
+    }
+  } @else {
+    @each $shade, $shade-value in $color {
+      .btn-#{$name}-#{$shade} {
+        background-color: $shade-value;
+        color: if(lightness($shade-value) > 45%, #000, #fff);
+      }
+    }
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: currentColor;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: inherit;
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: hsl(220, 90%, 56%);
+  text-decoration: underline;
+}
+
+.btn-square {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+}
+
+.btn-circle {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border-radius: 9999px;
+}

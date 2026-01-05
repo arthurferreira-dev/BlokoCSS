@@ -1,0 +1,8 @@
+@use "sass:string";
+@use "../utils/variables" as grid;
+
+@each $grids in grid.$grid-templates {
+  .template-#{$grids} {
+    grid-template-columns: string.unquote($grids);
+  }
+}

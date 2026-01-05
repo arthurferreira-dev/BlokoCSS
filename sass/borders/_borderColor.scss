@@ -1,0 +1,42 @@
+@use "sass:string";
+@use "sass:meta";
+@use "../utils/CommonColors" as ccolors;
+@use "../utils/variables" as current;
+
+$sides: (
+  "": "",
+  "-t": "-top",
+  "-r": "-right",
+  "-b": "-bottom",
+  "-l": "-left",
+);
+
+@each $name, $color in ccolors.$colors {
+  @each $prefix, $side in $sides {
+    @if meta.type-of($color) != "map" {
+      .border#{$prefix}-#{$name} {
+        border#{$side}-color: #{$color};
+      }
+    } @else {
+      @each $shade, $shade-value in $color {
+        .border#{$prefix}-#{$name}-#{$shade} {
+          border#{$side}-color: #{$shade-value};
+        }
+      }
+    }
+  }
+}
+
+@each $def in current.$borders-current-colors {
+  $value: "";
+
+  @if $def == "-current" {
+    $value: "currentColor";
+  } @else {
+    $value: string.slice($def, 2);
+  }
+
+  .border#{$def} {
+    border-color: $value;
+  }
+}

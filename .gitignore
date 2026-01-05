@@ -2,7 +2,8 @@
 *.vscode
 
 # Sass Configs
-*.scss
 *.css.map
 !bloko.scss
-*sass/
+sass/utils/*
+praticity/*
+fonts/*

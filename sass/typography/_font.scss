@@ -1,0 +1,92 @@
+@use "sass:string";
+@use "../utils/variables" as fonts;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora");
+
+/* ===== Font Face Generator  ===== */
+
+@mixin AttributeFont($name, $src, $fmt) {
+  @font-face {
+    font-family: $name;
+    src: url("../../fonts/#{$src}"), format(string.unquote($fmt));
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.otf", 'opentype');
+@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.ttf", 'truetype');
+@include AttributeFont("Nexa Extralight", "nexa/Nexa-ExtraLight.ttf", 'truetype');
+@include AttributeFont("Nexa Heavy", "nexa/Nexa-Heavy.ttf", 'truetype');
+
+/* ===== Font Family  ===== */
+
+$fonts: (
+  "mono": fonts.$mono,
+  "serif": fonts.$serif,
+  "sans": fonts.$sans,
+  "roboto": fonts.$roboto,
+  "lora": fonts.$lora,
+  "bebas": fonts.$bebas,
+  "nexa": fonts.$nexa_extralight,
+  "nexa-black": fonts.$nexa_heavy,
+  "open-sans": fonts.$open_sans,
+);
+
+@each $name, $font in $fonts {
+  .font-#{$name} {
+    font-family: $font;
+  }
+}
+
+/* ===== Font Style  ===== */
+
+$font_style: (
+  "italic": italic,
+  "style": normal,
+  "weight": normal,
+);
+
+@each $type, $style in $font_style {
+  .#{$type} {
+    @if $type == "weight" {
+      font-weight: $style;
+    } @else {
+      font-style: $style;
+    }
+  }
+}
+
+/* ===== Font Weight  ===== */
+
+$font_weight: (
+  "thin": 100,
+  "extralight": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800,
+  "black": 900,
+);
+
+@each $intesity, $weight in $font_weight {
+  .font-#{$intesity} {
+    font-weight: $weight;
+  }
+}
+
+/* ===== Font Smoothing  ===== */
+
+@mixin FontSmoothing($webkit, $moz) {
+  -webkit-font-smoothing: $webkit;
+  -moz-osx-font-smoothing: $moz;
+}
+
+.antialiased {
+  @include FontSmoothing(antialiased, grayscale);
+}
+
+.subpixel-antialiased {
+  @include FontSmoothing(auto, auto);
+}

@@ -1,0 +1,21 @@
+@use "../utils/variables" as height;
+
+$spacing: 0.25rem;
+
+@for $h from 0 through 100 {
+  @if $h == 0 {
+    .h-px {
+      height: 1px;
+    }
+  } @else {
+    .h-#{$h} {
+      height: $spacing * $h;
+    }
+  }
+}
+
+@each $name, $value in height.$sizing-pre-sizes {
+  .h-#{$name} {
+    height: $value;
+  }
+}

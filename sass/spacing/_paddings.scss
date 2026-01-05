@@ -1,0 +1,61 @@
+$p: 0.25rem;
+
+@for $f from 0 through 10 {
+  .p-#{$f} {
+    padding: $p * $f;
+  }
+}
+
+@for $f from 0 through 10 {
+  .p-\[#{$f}\.5\] {
+    padding: ($p * ($f + 0.5));
+  }
+}
+
+@for $f from 0 through 10 {
+  .pr-#{$f} {
+    padding-right: $p * $f;
+  }
+}
+
+@for $f from 0 through 10 {
+  .pr-\[#{$f}\.5\] {
+    padding-right: ($p * ($f + 0.5));
+  }
+}
+
+@for $f from 0 through 10 {
+  .pl-#{$f} {
+    padding-left: $p * $f;
+  }
+}
+
+@for $f from 0 through 10 {
+  .pl-\[#{$f}\.5\] {
+    padding-left: ($p * ($f + 0.5));
+  }
+}
+
+@for $f from 0 through 10 {
+  .pt-#{$f} {
+    padding-top: $p * $f;
+  }
+}
+
+@for $f from 0 through 10 {
+  .pt-\[#{$f}\.5\] {
+    padding-top: ($p * ($f + 0.5));
+  }
+}
+
+@for $f from 0 through 10 {
+  .pb-#{$f} {
+    padding-bottom: $p * $f;
+  }
+}
+
+@for $f from 0 through 10 {
+  .pb-\[#{$f}\.5\] {
+    padding-bottom: ($p * ($f + 0.5));
+  }
+}

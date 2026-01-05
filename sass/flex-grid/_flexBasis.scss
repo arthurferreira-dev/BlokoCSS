@@ -1,0 +1,7 @@
+@use "../utils/variables" as flex;
+
+@each $name, $value in flex.$flex-basis {
+  .basis-#{$name} {
+    flex-basis: $value;
+  }
+}

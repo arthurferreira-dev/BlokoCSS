@@ -1,0 +1,13 @@
+@use "sass:string";
+
+$visibles: ("visible", "collapse");
+
+@each $name in $visibles {
+  .#{$name} {
+    visibility: string.unquote($name);
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}

@@ -1,0 +1,19 @@
+@use "sass:string";
+
+$clears: ("left", "right", "both", "none", "inline-start", "inline-end");
+
+@each $clear in $clears {
+  @if $clear == "inline-start" {
+    .clear-start {
+      clear: string.unquote($clear);
+    }
+  } @else if $clear == "inline-end" {
+    .clear-end {
+      clear: string.unquote($clear);
+    }
+  } @else {
+    .clear-#{$clear} {
+      clear: string.unquote($clear);
+    }
+  }
+}

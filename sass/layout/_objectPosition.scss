@@ -1,0 +1,39 @@
+@use "sass:string";
+
+$positions: (
+  "top",
+  "bottom",
+  "left",
+  "right",
+  "center",
+  "top-left",
+  "top-right",
+  "bottom-left",
+  "bottom-right",
+  "inherit",
+  "initial"
+);
+
+@each $pos in $positions {
+  @if $pos == "top-left" {
+    .object-#{$pos} {
+      object-position: top left;
+    }
+  } @else if $pos == "top-right" {
+    .object-#{$pos} {
+      object-position: top right;
+    }
+  } @else if $pos == "bottom-left" {
+    .object-#{$pos} {
+      object-position: bottom left;
+    }
+  } @else if $pos == "bottom-right" {
+    .object-#{$pos} {
+      object-position: bottom right;
+    }
+  } @else {
+    .object-#{$pos} {
+      object-position: string.unquote($pos);
+    }
+  }
+}

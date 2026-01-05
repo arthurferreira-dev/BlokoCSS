@@ -1,0 +1,9 @@
+.z-auto {
+  z-index: auto;
+}
+
+@for $z from 0 through 75 {
+  .z-#{$z} {
+    z-index: $z;
+  }
+}

@@ -1,0 +1,8 @@
+@use "sass:string";
+@use "../utils/variables" as ws;
+
+@each $name in ws.$whitespaces {
+  .whitespace-#{$name} {
+    white-space: string.unquote($name);
+  }
+}

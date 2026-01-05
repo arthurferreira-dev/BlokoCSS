@@ -1,0 +1,21 @@
+@use "../utils/variables" as width;
+
+$spacing: 0.25rem;
+
+@for $w from 0 through 100 {
+  @if $w == 0 {
+    .w-px {
+      width: 1px;
+    }
+  } @else {
+    .w-#{$w} {
+      width: $spacing * $w;
+    }
+  }
+}
+
+@each $name, $value in width.$sizing-pre-sizes {
+  .w-#{$name} {
+    width: $value;
+  }
+}

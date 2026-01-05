@@ -1,0 +1,103 @@
+$full: 100%;
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+$xxl: 1320px;
+
+$mb: 575px; // Mobile
+$tb: 768px; // Tablet
+$dk: 992px; // Desktop
+$xldk: 1200px; // Extra Large Desktop
+
+@mixin media-q($media) {
+  @if $media == minimobile {
+    @media screen and (max-width: $mb) {
+      @content;
+    }
+  } @else if $media == mobile {
+    @media screen and (min-width: ($mb+1px)) and (max-width: ($tb - 1px)) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media screen and (min-width: $tb) and (max-width: ($dk - 1px)) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media screen and (min-width: $dk) and (max-width: ($xldk - 1px)) {
+      @content;
+    }
+  } @else if $media == xldesktop {
+    @media screen and (min-width: $xldk) and (max-width: ($xldk * 2 - 1px)) {
+      @content;
+    }
+  } @else if $media == xxldesktop {
+    @media screen and (min-width: ($xldk + 200px)) {
+      @content;
+    }
+  }
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-2xl {
+  & {
+    width: $full;
+  }
+
+  @include media-q(minimobile) {
+    width: $full;
+  }
+}
+
+.container,
+.container-sm {
+  @include media-q(mobile) {
+    width: $sm;
+  }
+}
+
+.container,
+.container-sm,
+.container-md {
+  @include media-q(tablet) {
+    width: $md;
+  }
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg {
+  @include media-q(desktop) {
+    width: $lg;
+  }
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  @include media-q(xldesktop) {
+    width: $xl;
+  }
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-2xl {
+  @include media-q(xxldesktop) {
+    width: $xxl;
+  }
+}
+
+.container-fluid {
+  width: $full;
+}

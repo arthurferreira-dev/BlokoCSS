@@ -1,0 +1,9 @@
+@use "sass:string";
+
+$boxs: ("border-box", "content-box");
+
+@each $box in $boxs {
+  .#{$box} {
+    box-sizing: string.unquote($box);
+  }
+}

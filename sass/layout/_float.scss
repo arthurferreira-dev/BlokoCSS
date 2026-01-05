@@ -1,0 +1,19 @@
+@use "sass:string";
+
+$floats: ("left", "right", "bottom", "top", "inline-start", "inline-end");
+
+@each $float in $floats {
+  @if $float == "inline-start" {
+    .float-start {
+      float: string.unquote($float);
+    }
+  } @else if $float == "inline-end" {
+    .float-end {
+      float: string.unquote($float);
+    }
+  } @else {
+    .float-#{$float} {
+      float: string.unquote($float);
+    }
+  }
+}

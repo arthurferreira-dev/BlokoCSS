@@ -1,0 +1,9 @@
+@use "sass:string";
+
+$fits: ("contain", "cover", "fill", "none", "scale-down");
+
+@each $fit in $fits {
+  .object-#{$fit} {
+    object-fit: string.unquote($fit);
+  }
+}

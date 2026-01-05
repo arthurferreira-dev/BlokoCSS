@@ -1,0 +1,8 @@
+@use "sass:string";
+@use "../utils/variables" as flex;
+
+@each $wrap in flex.$flex-wraps {
+  .flex-#{$wrap} {
+    flex-wrap: string.unquote($wrap);
+  }
+}

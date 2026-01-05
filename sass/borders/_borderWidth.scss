@@ -1,0 +1,23 @@
+@use "../utils/variables" as border;
+
+@each $name, $width in border.$border-width {
+  $suffix: if($name == "", "", "-#{$name}");
+
+  .border#{$suffix} {
+    border-width: $width;
+  }
+
+  .border-r#{$suffix} {
+    border-right-width: $width;
+  }
+
+  .border-l#{$suffix} {
+    border-left-width: $width;
+  }
+  .border-t#{$suffix} {
+    border-top-width: $width;
+  }
+  .border-b#{$suffix} {
+    border-bottom-width: $width;
+  }
+}

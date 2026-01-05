@@ -1,0 +1,30 @@
+$base: 2rem;
+
+$sizes: (
+  "3xs": $base * 8,
+  "2xs": $base * 9,
+  "xs": $base * 10,
+  "sm": $base * 12,
+  "md": $base * 14,
+  "lg": $base * 16,
+  "xl": $base * 18,
+  "2xl": $base * 21,
+  "3xl": $base * 24,
+  "4xl": $base * 28,
+  "5xl": $base * 32,
+  "6xl": $base * 36,
+  "7xl": $base * 40,
+  "8xl": $base * 44,
+);
+
+@each $name, $value in $sizes {
+  .columns-#{$name} {
+    columns: $value;
+  }
+}
+
+@for $c from 1 through 10 {
+  .columns-#{$c} {
+    columns: $c;
+  }
+}

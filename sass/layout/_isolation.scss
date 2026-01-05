@@ -1,0 +1,15 @@
+@use "sass:string";
+
+$isolations: (isolate, auto);
+
+@each $isol in $isolations {
+  @if $isol == isolate {
+    .isolation {
+      isolation: $isol;
+    }
+  } @else {
+    .isolation-#{string.quote($isol)} {
+      isolation: $isol;
+    }
+  }
+}

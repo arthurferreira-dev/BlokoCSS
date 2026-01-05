@@ -1,0 +1,9 @@
+@use "sass:string";
+
+$boxs: ("clone", "slice");
+
+@each $box in $boxs {
+  .box-decoration-#{$box} {
+    box-decoration-break: string.unquote($box);
+  }
+}

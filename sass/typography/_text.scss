@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@use "sass:meta";
+@use "../utils/CommonColors" as ccolors;
+
+$text_aligns: (
+  "right": right,
+  "left": left,
+  "center": center,
+  "justify": justify,
+);
+
+@each $name in $text_aligns {
+  .text-#{$name} {
+    text-align: $name;
+  }
+}
+
+$text_especial: (
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalize": capitalize,
+);
+
+@each $name, $especial in $text_especial {
+  .text-#{$name} {
+    text-transform: $especial;
+  }
+}
+
+@mixin Truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-truncate {
+  @include Truncate();
+}
+
+$text_wraps: (
+  "nowrap": nowrap,
+  "wrap": wrap,
+);
+
+@each $name, $wrap in $text_wraps {
+  .text-#{$name} {
+    text-wrap: $wrap;
+  }
+}
+
+$tm-xs: 0.75rem;
+$tm-sm: 0.875rem;
+$tm-bs: 1rem;
+$tm-lg: 1.125rem;
+$tm-xl: 1.25rem;
+$tm-2xl: 1.5rem;
+$tm-3xl: 1.875rem;
+$tm-4xl: 2.25rem;
+
+$extra-small: 1rem;
+$small: 1.25rem;
+$base: 1.5rem;
+$lg-xl: 1.75rem;
+$xxl: 2rem;
+$xxxl: 2.25rem;
+$xxxxl: 2.5rem;
+
+.text-xsm {
+  font-size: $tm-xs;
+  line-height: $extra-small;
+}
+
+.text-sm {
+  font-size: $tm-sm;
+  line-height: $small;
+}
+
+.text-bs {
+  font-size: $tm-bs;
+  line-height: $base;
+}
+
+.text-lg {
+  font-size: $tm-lg;
+}
+
+.text-xl {
+  font-size: $tm-xl;
+}
+
+.text-lg,
+.text-xl {
+  line-height: $lg-xl;
+}
+
+.text-2xl {
+  font-size: $tm-2xl;
+  line-height: $xxl;
+}
+
+.text-3xl {
+  font-size: $tm-3xl;
+  line-height: $xxxl;
+}
+
+.text-4xl {
+  font-size: $tm-4xl;
+  line-height: $xxxxl;
+}
+
+@each $name, $color in ccolors.$colors {
+  @if meta.type-of($color) != "map" {
+    .text-#{$name} {
+      color: #{$color};
+    }
+  } @else {
+    @each $shade, $shade-value in $color {
+      .text-#{$name}-#{$shade} {
+        color: #{$shade-value};
+      }
+    }
+  }
+}
