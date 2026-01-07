@@ -1,0 +1,104 @@
+@use "../utils/variables" as modal;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+
+  .modal-content {
+    position: relative;
+    background: var(--modal-bg, #fff);
+    color: var(--modal-text, #000);
+    width: min(90vw, 32rem);
+    max-height: 90vh;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    transform: translateY(1rem) scale(0.98);
+    transition: transform 0.25s ease;
+  }
+}
+
+.modal-toggle {
+  display: none;
+}
+
+.modal-toggle + .modal {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-toggle:checked + .modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-toggle:checked + .modal .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+@each $name, $size in modal.$modal-sizes {
+  .modal-size-#{$name} .modal-content {
+    max-width: $size;
+  }
+}
+
+@each $name, $align in modal.$modal-positions {
+  .modal-pos-#{$name} {
+    @if $align == center {
+      align-items: center;
+    } @else if $align == flex-start {
+      align-items: flex-start;
+      padding-top: 3rem;
+    } @else {
+      align-items: $align;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+dialog.modal {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  background: transparent;
+  display: none;
+}
+
+dialog.modal[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}

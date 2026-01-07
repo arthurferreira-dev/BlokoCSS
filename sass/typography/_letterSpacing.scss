@@ -1,0 +1,7 @@
+@use "../utils/variables" as letter;
+
+@each $name, $spacing in letter.$letter-spacings {
+  .letter-#{$name} {
+    letter-spacing: $spacing;
+  }
+}

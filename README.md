@@ -10,7 +10,7 @@ O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutiliz�
 
 * &#x1F680; Sem dependências externas de libs CSS
 
-* &#x1F9FC; Sintaxe clara e fácil de manter
+* &#x1F9FC; Sintaxe clara e fácil de entender
 
 * &#x1F310; Ideal para projetos HTML/CSS puros
 
@@ -30,7 +30,7 @@ Você pode utilizar dessas seguintes formas:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arthurferreira-dev/BlokoCSS/css/bloko.min.css" />
 ```
 
-1. Baixando o Arquivo (*.ZIP*)
+2. Baixando o Arquivo (*.ZIP*)
 
 <a href="">
 <img src="">

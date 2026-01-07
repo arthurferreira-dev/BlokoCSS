@@ -1,29 +1,22 @@
 @charset "UTF-8";
+@use "sass:string";
 @use "sass:meta";
+@use "../utils/variables" as text;
 @use "../utils/CommonColors" as ccolors;
 
-$text_aligns: (
-  "right": right,
-  "left": left,
-  "center": center,
-  "justify": justify,
-);
+$text_aligns: (right, left, center, justify);
 
 @each $name in $text_aligns {
-  .text-#{$name} {
+  .text-#{string.quote($name)} {
     text-align: $name;
   }
 }
 
-$text_especial: (
-  "uppercase": uppercase,
-  "lowercase": lowercase,
-  "capitalize": capitalize,
-);
+$text_especial: (uppercase, lowercase, capitalize);
 
-@each $name, $especial in $text_especial {
-  .text-#{$name} {
-    text-transform: $especial;
+@each $name in $text_especial {
+  .text-#{string.quote($name)} {
+    text-transform: $name;
   }
 }
 
@@ -81,14 +74,11 @@ $xxxxl: 2.5rem;
 
 .text-lg {
   font-size: $tm-lg;
+  line-height: $lg-xl;
 }
 
 .text-xl {
   font-size: $tm-xl;
-}
-
-.text-lg,
-.text-xl {
   line-height: $lg-xl;
 }
 
@@ -105,6 +95,16 @@ $xxxxl: 2.5rem;
 .text-4xl {
   font-size: $tm-4xl;
   line-height: $xxxxl;
+}
+
+@each $name in text.$text-decoration-lines {
+  .#{$name} {
+    @if $name == "no-underline" {
+      text-decoration: none;
+    } @else {
+      text-decoration: string.unquote($name);
+    }
+  }
 }
 
 @each $name, $color in ccolors.$colors {

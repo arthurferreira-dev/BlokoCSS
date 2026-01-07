@@ -2,9 +2,8 @@
   "name": "blokocss",
   "version": "1.0.0",
   "description": "O BlokoCSS é uma biblioteca de componentes CSS simples, modular e reutilizável, desenvolvida para acelerar o desenvolvimento de interfaces web com uma base visual limpa e consistente. Ideal para projetos que precisam de estrutura e estilo sem a complexidade de frameworks grandes como Bootstrap ou Tailwind. Inspirada em Bootstrap, TailwindCSS e DaisyUI",
-  "main": "bloko.js",
+  "main": "javascript/bloko.js",
   "scripts": {
-    "sass": "sass sass/bloko.scss css/bloko.css",
     "sass:build": "sass sass/bloko.scss:css/bloko.css",
     "sass:build:min": "sass sass/bloko.scss:css/bloko.min.css --style=compressed --no-source-map"
   },
@@ -17,7 +16,7 @@
     "CSS Lib",
     "CSS"
   ],
-  "author": "",
+  "author": "arthurferreira-dev",
   "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/arthurferreira-dev/BlokoCSS/issues"

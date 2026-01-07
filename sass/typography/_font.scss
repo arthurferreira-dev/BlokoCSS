@@ -13,10 +13,14 @@
   }
 }
 
-@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.otf", 'opentype');
-@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.ttf", 'truetype');
-@include AttributeFont("Nexa Extralight", "nexa/Nexa-ExtraLight.ttf", 'truetype');
-@include AttributeFont("Nexa Heavy", "nexa/Nexa-Heavy.ttf", 'truetype');
+@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.otf", "opentype");
+@include AttributeFont("Bebas Regular", "bebas/Bebas-Regular.ttf", "truetype");
+@include AttributeFont(
+  "Nexa Extralight",
+  "nexa/Nexa-ExtraLight.ttf",
+  "truetype"
+);
+@include AttributeFont("Nexa Heavy", "nexa/Nexa-Heavy.ttf", "truetype");
 
 /* ===== Font Family  ===== */
 
@@ -89,4 +93,16 @@ $font_weight: (
 
 .subpixel-antialiased {
   @include FontSmoothing(auto, auto);
+}
+
+@each $name in fonts.$font-stretchs {
+  .stretch-#{$name} {
+    font-stretch: string.unquote($name);
+  }
+}
+
+@each $name in fonts.$font-variants-numerics {
+  .#{$name} {
+    font-variant-numeric: string.unquote($name);
+  }
 }
