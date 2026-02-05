@@ -2,8 +2,6 @@
 @use "../utils/variables" as fonts;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora");
 
-/* ===== Font Face Generator  ===== */
-
 @mixin AttributeFont($name, $src, $fmt) {
   @font-face {
     font-family: $name;
@@ -21,8 +19,6 @@
   "truetype"
 );
 @include AttributeFont("Nexa Heavy", "nexa/Nexa-Heavy.ttf", "truetype");
-
-/* ===== Font Family  ===== */
 
 $fonts: (
   "mono": fonts.$mono,
@@ -42,8 +38,6 @@ $fonts: (
   }
 }
 
-/* ===== Font Style  ===== */
-
 $font_style: (
   "italic": italic,
   "style": normal,
@@ -59,8 +53,6 @@ $font_style: (
     }
   }
 }
-
-/* ===== Font Weight  ===== */
 
 $font_weight: (
   "thin": 100,
@@ -79,8 +71,6 @@ $font_weight: (
     font-weight: $weight;
   }
 }
-
-/* ===== Font Smoothing  ===== */
 
 @mixin FontSmoothing($webkit, $moz) {
   -webkit-font-smoothing: $webkit;

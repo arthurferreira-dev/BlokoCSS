@@ -7,9 +7,21 @@ $spacing: 0.25rem;
     .h-px {
       height: 1px;
     }
+    .min-h-px {
+      min-height: 1px;
+    }
+    .max-h-px {
+      max-height: 1px;
+    }
   } @else {
     .h-#{$h} {
       height: $spacing * $h;
+    }
+    .min-h-#{$h} {
+      min-height: $spacing * $h;
+    }
+    .max-h-#{$h} {
+      max-height: $spacing * $h;
     }
   }
 }
@@ -17,5 +29,11 @@ $spacing: 0.25rem;
 @each $name, $value in height.$sizing-pre-sizes {
   .h-#{$name} {
     height: $value;
+  }
+  .min-h-#{$name} {
+    min-height: $value;
+  }
+  .max-h-#{$name} {
+    max-height: $value;
   }
 }

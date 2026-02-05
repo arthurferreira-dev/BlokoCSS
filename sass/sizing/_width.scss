@@ -7,9 +7,21 @@ $spacing: 0.25rem;
     .w-px {
       width: 1px;
     }
+    .min-w-px {
+      min-width: 1px;
+    }
+    .max-w-px {
+      max-width: 1px;
+    }
   } @else {
     .w-#{$w} {
       width: $spacing * $w;
+    }
+    .min-w-#{$w} {
+      min-width: $spacing * $w;
+    }
+    .max-w-#{$w} {
+      max-width: $spacing * $w;
     }
   }
 }
@@ -17,5 +29,11 @@ $spacing: 0.25rem;
 @each $name, $value in width.$sizing-pre-sizes {
   .w-#{$name} {
     width: $value;
+  }
+  .min-w-#{$name} {
+    min-width: $value;
+  }
+  .max-w-#{$name} {
+    max-width: $value;
   }
 }

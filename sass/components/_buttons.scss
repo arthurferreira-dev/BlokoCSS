@@ -1,13 +1,11 @@
 @use "sass:meta";
 @use "../utils/CommonColors" as ccolors;
+@use "../utils/mixins" as mixin;
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include mixin.apply('inline-flex', 'items-center', 'justify-center', 'pos-relative', 'font-medium');
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  font-weight: 500;
   border-radius: 0.5rem;
   line-height: 1;
   white-space: nowrap;
@@ -15,7 +13,6 @@
   background-clip: padding-box;
   cursor: pointer;
   overflow: hidden;
-  position: relative;
   outline: none;
 
   transition: background-color 0.2s ease, color 0.2s ease,

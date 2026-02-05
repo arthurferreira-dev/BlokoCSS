@@ -6,9 +6,15 @@
     .bg-#{$name} {
       background-color: #{$color};
     }
+    .hover\:bg-#{$name}:hover {
+      background-color: #{$color};
+    }
   } @else {
     @each $shade, $shade-value in $color {
       .bg-#{$name}-#{$shade} {
+        background-color: #{$shade-value};
+      }
+      .hover\:bg-#{$name}-#{$shade}:hover {
         background-color: #{$shade-value};
       }
     }

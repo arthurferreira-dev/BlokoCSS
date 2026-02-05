@@ -1,0 +1,13 @@
+@for $g from 0 through 50 {
+  .gap-#{$g} {
+    gap: $g * 0.25rem;
+  }
+
+  .row-gap-#{$g} {
+    row-gap: $g * 0.25rem;
+  }
+
+  .col-gap-#{$g} {
+    column-gap: $g * 0.25rem;
+  }
+}
