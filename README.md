@@ -46,4 +46,14 @@ Você pode utilizar dessas seguintes formas:
     Baixar bloko.zip
 </a>
 
+## &#x1F4CC; BlokoCSS para frameworks/bibliotecas
+
+### React (JSX/TSX)
+
+<a href="./zip/bloko-react.zip">
+    Baixar bloko-react.zip
+</a>
+
+<br>
+
 > Este projeto está sobe a Licensa **GNU AFFERO GENERAL**, confira em [LICENSE](LICENSE)
