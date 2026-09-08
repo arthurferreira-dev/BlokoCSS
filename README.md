@@ -1,6 +1,6 @@
 # &#x1F4E6; BlokoCSS
 
-<img src="https://img.shields.io/badge/version-0.3-green"/>
+<img src="https://img.shields.io/badge/version-0.4.1-green"/>
 
 O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutilizável, desenvolvida para acelerar o desenvolvimento de interfaces web com uma base visual limpa e consistente. Ideal para projetos que precisam de estrutura e estilo sem a complexidade de frameworks grandes como Bootstrap ou Tailwind.
 
@@ -8,7 +8,7 @@ O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutiliz�
 
 - &#x2705; Componentes prontos para uso
 
-- &#x1F9E9; Estilo modular e personalizável
+- &#x1F9E9; Estilo modular e personalizável (apenas para Sass)
 
 - &#x1F680; Sem dependências externas de libs CSS
 
@@ -45,15 +45,6 @@ Você pode utilizar dessas seguintes formas:
 <a href="./zip/bloko.zip">
     Baixar bloko.zip
 </a>
-
-## &#x1F4CC; BlokoCSS para frameworks/bibliotecas
-
-### React (JSX/TSX)
-
-<a href="./zip/bloko-react.zip">
-    Baixar bloko-react.zip
-</a>
-
 <br>
 
 > Este projeto está sobe a Licensa **GNU AFFERO GENERAL**, confira em [LICENSE](LICENSE)

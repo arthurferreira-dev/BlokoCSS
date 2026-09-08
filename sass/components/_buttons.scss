@@ -1,4 +1,5 @@
 @use "sass:meta";
+@use 'sass:color';
 @use "../utils/CommonColors" as ccolors;
 @use "../utils/mixins" as mixin;
 
@@ -21,22 +22,19 @@
   &:focus-visible {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
   }
-  &:active {
-    transform: scale(0.97);
-  }
 }
 
 @each $name, $color in ccolors.$colors {
   @if meta.type-of($color) != "map" {
     .btn-#{$name} {
       background-color: $color;
-      color: if(lightness($color) > 45%, #000, #fff);
+      color: if(sass(color.channel($color, "lightness") > 45%): #000; else: #fff);
     }
   } @else {
     @each $shade, $shade-value in $color {
       .btn-#{$name}-#{$shade} {
         background-color: $shade-value;
-        color: if(lightness($shade-value) > 45%, #000, #fff);
+        color: if(sass(color.channel($shade-value, "lightness") > 45%): #000; else: #fff);
       }
     }
   }

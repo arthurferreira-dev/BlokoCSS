@@ -1,6 +1,7 @@
 @use "sass:string";
-@use "../utils/variables" as fonts;
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora");
+@use "../utils/fonts" as fonts;
+@use "../utils/variables" as vars;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora&family=Poppins&family=Nunito&family=Rubik");
 
 @mixin AttributeFont($name, $src, $fmt) {
   @font-face {
@@ -30,6 +31,9 @@ $fonts: (
   "nexa": fonts.$nexa_extralight,
   "nexa-black": fonts.$nexa_heavy,
   "open-sans": fonts.$open_sans,
+  "poppins": fonts.$poppins,
+  "rubik": fonts.$rubik,
+  "nunito": fonts.$nunito,
 );
 
 @each $name, $font in $fonts {
@@ -85,13 +89,13 @@ $font_weight: (
   @include FontSmoothing(auto, auto);
 }
 
-@each $name in fonts.$font-stretchs {
+@each $name in vars.$font-stretchs {
   .stretch-#{$name} {
     font-stretch: string.unquote($name);
   }
 }
 
-@each $name in fonts.$font-variants-numerics {
+@each $name in vars.$font-variants-numerics {
   .#{$name} {
     font-variant-numeric: string.unquote($name);
   }

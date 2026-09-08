@@ -1,0 +1,17 @@
+@use "../utils/variables" as justs;
+
+@each $nm, $vl in justs.$justify-content {
+  .justify-content-#{$nm} {
+    justify-content: $vl;
+  }
+}
+@each $nm, $vl in justs.$justify-items {
+  .justify-items-#{$nm} {
+    justify-items: $vl;
+  }
+}
+@each $nm, $vl in justs.$justify-self {
+  .justify-self-#{$nm} {
+    justify-self: $vl;
+  }
+}

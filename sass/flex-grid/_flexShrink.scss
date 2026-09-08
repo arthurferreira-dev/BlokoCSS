@@ -4,6 +4,6 @@
 
 @for $s from 2 through 50 {
   .shrink-#{$s} {
-    flex-grow: $s;
+    flex-shrink: $s;
   }
 }

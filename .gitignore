@@ -8,3 +8,7 @@ sass/utils/*
 praticity/*
 fonts/*
 README_UTILITIES.md
+node_modules/*
+*node_modules
+*bloko.html
+*teste.js

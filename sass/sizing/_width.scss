@@ -2,7 +2,7 @@
 
 $spacing: 0.25rem;
 
-@for $w from 0 through 100 {
+@for $w from 0 through 400 {
   @if $w == 0 {
     .w-px {
       width: 1px;
@@ -27,6 +27,18 @@ $spacing: 0.25rem;
 }
 
 @each $name, $value in width.$sizing-pre-sizes {
+  .w-#{$name} {
+    width: $value;
+  }
+  .min-w-#{$name} {
+    min-width: $value;
+  }
+  .max-w-#{$name} {
+    max-width: $value;
+  }
+}
+
+@each $name, $value in width.$sizing-full-sizes {
   .w-#{$name} {
     width: $value;
   }

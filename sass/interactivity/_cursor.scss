@@ -1,6 +1,5 @@
 $point: pointer;
 $nt: not-allowed;
-$crosshair: cell;
 
 $cursor: (
   "pointer": pointer,
@@ -10,7 +9,7 @@ $cursor: (
   "help": help,
   "none": none,
   "progress": progress,
-  "crosshair": $crosshair,
+  "crosshair": crosshair,
 );
 
 .cursor-\[not_allowed\] {

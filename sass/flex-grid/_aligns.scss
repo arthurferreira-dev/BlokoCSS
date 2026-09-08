@@ -1,0 +1,17 @@
+@use "../utils/variables" as aligns;
+
+@each $nm, $vl in aligns.$align-content {
+  .content-#{$nm} {
+    align-content: $vl;
+  }
+}
+@each $nm, $vl in aligns.$align-items {
+  .items-#{$nm} {
+    align-items: $vl;
+  }
+}
+@each $nm, $vl in aligns.$align-self {
+  .self-#{$nm} {
+    align-self: $vl;
+  }
+}

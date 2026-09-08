@@ -2,7 +2,7 @@
 
 $spacing: 0.25rem;
 
-@for $h from 0 through 100 {
+@for $h from 0 through 400 {
   @if $h == 0 {
     .h-px {
       height: 1px;
@@ -27,6 +27,18 @@ $spacing: 0.25rem;
 }
 
 @each $name, $value in height.$sizing-pre-sizes {
+  .h-#{$name} {
+    height: $value;
+  }
+  .min-h-#{$name} {
+    min-height: $value;
+  }
+  .max-h-#{$name} {
+    max-height: $value;
+  }
+}
+
+@each $name, $value in height.$sizing-full-sizes {
   .h-#{$name} {
     height: $value;
   }

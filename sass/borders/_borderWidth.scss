@@ -1,7 +1,7 @@
 @use "../utils/variables" as border;
 
 @each $name, $width in border.$border-width {
-  $suffix: if($name == "", "", "-#{$name}");
+  $suffix: if(sass($name == ""): ""; else: "-#{$name}");
 
   .border#{$suffix} {
     border-width: $width;
