@@ -1,28 +1,31 @@
-# &#x1F4E6; BlokoCSS
+<h1> 
+<img src="assets/blokocss-icon.png" width="42" style="max-width: 100%; height: auto"> 
+BlokoCSS
+</h1>
 
 <img src="https://img.shields.io/badge/version-0.4.1-green"/>
 
-O **BlokoCSS** é uma biblioteca de componentes CSS simples, modular e reutilizável, desenvolvida para acelerar o desenvolvimento de interfaces web com uma base visual limpa e consistente. Ideal para projetos que precisam de estrutura e estilo sem a complexidade de frameworks grandes como Bootstrap ou Tailwind.
+**BlokoCSS** is a simple, modular, and reusable CSS component library developed to speed up your web interface development with a clean visual base. It is ideal for projects that need structure and style without the complexity of large frameworks like Bootstrap or Tailwind.
 
-## &#x2728; Características
+## &#x2728; Features
 
 - &#x2705; Componentes prontos para uso
 
-- &#x1F9E9; Estilo modular e personalizável (apenas para Sass)
+- &#x1F9E9; Modular and reusable style (just in Sass)
 
-- &#x1F680; Sem dependências externas de libs CSS
+- &#x1F680; Don´t have external dependencies (except Google Fonts)
 
-- &#x1F9FC; Sintaxe clara e fácil de entender
+- &#x1F9FC; Easy and clean sintax to learn
 
-- &#x1F310; Ideal para projetos HTML/CSS puros
+- &#x1F310; Ideal to pure HTML & CSS projects
 
-## &#x1F4E5; Instalação
+## &#x1F4E5; Instalation
 
-Você pode utilizar dessas seguintes formas:
+You have 3 ways to use the BlokoCSS:
 
-1. Via CDN
+## Via CDN
 
-### Versão Normal
+### Normal Version
 
 ```html
 <link
@@ -31,7 +34,7 @@ Você pode utilizar dessas seguintes formas:
 />
 ```
 
-### Versão Minificada
+### Minified Version
 
 ```html
 <link
@@ -40,11 +43,11 @@ Você pode utilizar dessas seguintes formas:
 />
 ```
 
-2. Baixando o Arquivo (_.ZIP_)
+## Dowloanded the source file (_.ZIP_)
 
 <a href="./zip/bloko.zip">
-    Baixar bloko.zip
+    <img src="assets/download-zipfile.png" width="400">
 </a>
 <br>
 
-> Este projeto está sobe a Licensa **GNU AFFERO GENERAL**, confira em [LICENSE](LICENSE)
+This project have the license **GNU AFFERO GENERAL**, see more in [LICENSE](LICENSE)
