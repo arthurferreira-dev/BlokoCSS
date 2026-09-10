@@ -6,7 +6,7 @@
   }
 }
 
-@for $p from 1 through 100 {
+@for $p from 1 through 80 {
   .order-#{$p} {
     order: $p;
   }

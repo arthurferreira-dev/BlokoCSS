@@ -1,7 +1,7 @@
 @use "../utils/variables" as justs;
 
 @each $nm, $vl in justs.$justify-content {
-  .justify-content-#{$nm} {
+  .justify-#{$nm} {
     justify-content: $vl;
   }
 }

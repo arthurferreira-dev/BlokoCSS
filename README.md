@@ -3,7 +3,7 @@
 BlokoCSS
 </h1>
 
-<img src="https://img.shields.io/badge/version-0.4.1-green"/>
+<img src="https://img.shields.io/badge/version-0.4.2-green"/>
 
 **BlokoCSS** is a simple, modular, and reusable CSS component library developed to speed up your web interface development with a clean visual base. It is ideal for projects that need structure and style without the complexity of large frameworks like Bootstrap or Tailwind.
 

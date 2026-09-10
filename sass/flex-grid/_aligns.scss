@@ -11,7 +11,7 @@
   }
 }
 @each $nm, $vl in aligns.$align-self {
-  .self-#{$nm} {
+  .align-self-#{$nm} {
     align-self: $vl;
   }
 }

@@ -1,0 +1,36 @@
+@for $num from 0 through 80 {
+  .row-start-#{$num} {
+    grid-row-start: $num;
+  }
+  .-row-start-#{$num} {
+    grid-row-start: $num * -1;
+  }
+  .row-end-#{$num} {
+    grid-row-end: $num;
+  }
+  .-row-end-#{$num} {
+    grid-row-end: $num * -1;
+  }
+  .row-#{$num} {
+    grid-row: $num;
+  }
+  .-row-#{$num} {
+    grid-row: $num * -1;
+  }
+  .row-span-#{$num} {
+    grid-row: span $num / span $num;
+  }
+}
+
+.row-span-full {
+  grid-row: 1 / -1;
+}
+.row-auto {
+  grid-row: auto;
+}
+.row-start-auto {
+  grid-row-start: auto;
+}
+.row-end-auto {
+  grid-row-end: auto;
+}

@@ -1,0 +1,17 @@
+@use "../utils/variables" as pls;
+
+@each $nm, $vl in pls.$place-content {
+  .place-content-#{$nm} {
+    place-content: $vl;
+  }
+}
+@each $nm, $vl in pls.$place-items {
+  .place-items-#{$nm} {
+    place-items: $vl;
+  }
+}
+@each $nm, $vl in pls.$place-self {
+  .place-self-#{$nm} {
+    place-self: $vl;
+  }
+}

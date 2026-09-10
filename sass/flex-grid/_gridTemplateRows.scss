@@ -1,0 +1,13 @@
+@use "../utils/variables" as grid;
+
+@each $nm, $vl in grid.$grid-templates {
+  .template-rows-#{$nm} {
+    grid-template-rows: $vl;
+  }
+}
+
+@for $num from 0 through 50 {
+  .template-rows-#{$num} {
+    grid-template-rows: repeat($num, minmax(0, 1fr));
+  }
+}
